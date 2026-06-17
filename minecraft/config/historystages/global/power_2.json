@@ -1,0 +1,25 @@
+{
+  "display_name": "Power (2)",
+  "research_time": 20,
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "exact",
+  "items": [
+    "create:windmill_bearing"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "kubejs:kjs/create_windmill_bearing"
+  ],
+  "dimensions": [],
+  "structures": {
+    "structures": []
+  },
+  "entities": {
+    "spawnlock": [],
+    "attacklock": [],
+    "modLinked": []
+  },
+  "dependencies": []
+}

@@ -1,0 +1,36 @@
+{
+  "display_name": "Logistics (1)",
+  "research_time": 20,
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "exact",
+  "items": [
+    "create:cogwheel",
+    "create:large_cogwheel",
+    "create:hand_crank",
+    "create:shaft",
+    "create:gearbox"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "kubejs:kjs/create_cogwheel",
+    "kubejs:kjs/create_large_cogwheel",
+    "kubejs:kjs/create_hand_crank",
+    "kubejs:kjs/create_shaft",
+    "kubejs:kjs/create_gearbox"
+  ],
+  "dimensions": [],
+  "structures": {
+    "structures": []
+  },
+  "entities": {
+    "spawnlock": [
+      "minecraft:zombie",
+      "minecraft:creeper"
+    ],
+    "attacklock": [],
+    "modLinked": []
+  },
+  "dependencies": []
+}

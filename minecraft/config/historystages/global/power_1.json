@@ -1,0 +1,27 @@
+{
+  "display_name": "Power (1)",
+  "research_time": 20,
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "exact",
+  "items": [
+    "create:water_wheel",
+    "create:large_water_wheel"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "kubejs:kjs/create_large_water_wheel",
+    "kubejs:kjs/create_water_wheel"
+  ],
+  "dimensions": [],
+  "structures": {
+    "structures": []
+  },
+  "entities": {
+    "spawnlock": [],
+    "attacklock": [],
+    "modLinked": []
+  },
+  "dependencies": []
+}

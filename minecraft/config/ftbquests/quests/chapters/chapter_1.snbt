@@ -1,0 +1,578 @@
+{
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	disable_toast: true
+	filename: "chapter_1"
+	group: "73B33364BF0B9CED"
+	id: "04EDD144DF445482"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["58665F62B7658A51"]
+			description: [
+				"Unlocks the &aMechanical Press&r and &aMixer&r and mechanical saw"
+				"Enables the spawning of &4&nSpiders&r And&4&n Skeletons"
+			]
+			icon: "create:mechanical_mixer"
+			id: "4937AE3C355A10E4"
+			rewards: [
+				{
+					auto: "invisible"
+					icon: "create:iron_sheet"
+					id: "39A47D69C4067C62"
+					ignore_reward_blocking: true
+					stage: "create_basic_processing"
+					tags: ["create_basic_processing"]
+					team_reward: true
+					title: "Basic Processing"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "27702D7160508092"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "basic_processing"
+					type: "historystages:history_stage"
+				}
+			]
+			size: 3.0d
+			subtitle: "Unlocks Mechanical Mixer and Press"
+			tasks: [
+				{
+					consume_items: true
+					count: 20L
+					id: "0B7703E47B10C487"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1C48D640F8EF1108"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "03E788BACEAFAAC2"
+					item: { Count: 20, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+			]
+			title: "Basic Processing"
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			description: ["Unlocks &awater wheel&f and &alarge water&r wheel."]
+			icon: "create:large_water_wheel"
+			id: "2DBB1B4A8AAD9445"
+			rewards: [
+				{
+					auto: "invisible"
+					icon: "create:large_water_wheel"
+					id: "638881682684B4F4"
+					ignore_reward_blocking: true
+					stage: ""
+					title: "Power Generation (1)"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "76B027DCF8768D38"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "power_1"
+					type: "historystages:history_stage"
+				}
+				{
+					count: 5
+					id: "1592066A07D96C8C"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Generate Stress Units using water"
+			tasks: [
+				{
+					count: 10L
+					id: "040303FC3F396E99"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "50FC8FB328F8B1BF"
+					item: { Count: 5, id: "minecraft:water_bucket" }
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "60809FDA04741EF5"
+					item: { Count: 10, id: "create:andesite_casing" }
+					type: "item"
+				}
+			]
+			title: "Power Generation (1)"
+			x: -7.5d
+			y: -5.0d
+		}
+		{
+			description: [
+				"Unlocks &aShafts, Small and large cogwheels, Gearboxes &r and &a Hand Cranks"
+				"Enables the spawning of &4&nZombies&r &r and &4&nCreepers"
+			]
+			icon: "create:shaft"
+			id: "58665F62B7658A51"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "33831F3C377A89EE"
+					ignore_reward_blocking: true
+					stage: "logistics_1"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "779A9AEE440766EC"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "logistics_1"
+					type: "historystages:history_stage"
+				}
+			]
+			size: 3.0d
+			subtitle: "Unlock ways to transport Stress Units"
+			tasks: [
+				{
+					count: 5L
+					id: "76ADF7873EA1AD65"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "0C441239350BF42B"
+					item: { Count: 10, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3E9A3D382E12C5E3"
+					item: { Count: 5, id: "create:andesite_alloy" }
+					type: "item"
+				}
+			]
+			title: "Logistics (1)"
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["58665F62B7658A51"]
+			id: "72C6D42480771C40"
+			tasks: [{
+				id: "2A6F6E0C5D6CA8F2"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["58665F62B7658A51"]
+			id: "0C2A31D9E34B4313"
+			tasks: [{
+				id: "694A6F87B39343EB"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["58665F62B7658A51"]
+			id: "3EB879D0758D720C"
+			tasks: [{
+				id: "0642ACC493B70D8B"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["58665F62B7658A51"]
+			id: "6457A6B4E1878062"
+			tasks: [{
+				id: "53BD6A46D993394B"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2DBB1B4A8AAD9445"]
+			id: "133C142133B9353C"
+			tasks: [{
+				id: "5ED702E265F196AB"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: -8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2DBB1B4A8AAD9445"]
+			id: "379FCF863CFC74AF"
+			tasks: [{
+				id: "6C63A05A3F72FBE5"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4937AE3C355A10E4"]
+			id: "72036CC0EE861B8E"
+			tasks: [{
+				id: "3990C1F1F63F9449"
+				item: "create:copper_sheet"
+				type: "item"
+			}]
+			title: "Copper Sheet"
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["58665F62B7658A51"]
+			icon: "create:vertical_gearbox"
+			id: "7F5BD1EF18CEDAC5"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "4B7E4669AB706004"
+					ignore_reward_blocking: true
+					stage: "vertical_gearbox"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "05717E7688669F56"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "vertical_gearbox"
+					type: "historystages:history_stage"
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					count: 10L
+					id: "4C6661B5097A12CA"
+					item: { Count: 10, id: "create:gearbox" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "21459B3ADC674DF6"
+					item: { Count: 3, id: "create:andesite_alloy" }
+					type: "item"
+				}
+			]
+			title: "Vertical Gearbox"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4937AE3C355A10E4"]
+			id: "6BE3BF13254FD878"
+			tasks: [{
+				id: "5FF53869B51E7F2F"
+				item: "create:iron_sheet"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6BE3BF13254FD878"]
+			id: "3B13879E05B1DF4E"
+			tasks: [
+				{
+					id: "3F1817DCBA31C4BF"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "248B388389CFC8D3"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B7FB6740AFD3D9A"
+					item: {
+						Count: 1
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "17599A388B7826DB"
+					item: {
+						Count: 1
+						id: "minecraft:iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E24E49D359A7015"
+					item: {
+						Count: 1
+						id: "minecraft:iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Iron Tools"
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4937AE3C355A10E4"]
+			id: "6E7AC01EFF2BEA7A"
+			tasks: [{
+				id: "2472AB3A5BFC1AFE"
+				item: "create_ironworks:tin_sheet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Includes textures from: (link in modpack description)"
+				"Factorio Mod, licensed under the MIT License."
+				"Futureazoo’s Texture Repository. The link to the repository is provided in the modpack description."
+				""
+				"{@pagebreak}"
+				"https://github.com/malcolmriley/unused-textures/blob/master/items/material_blob_resin_1.png"
+				""
+				"malcolmriley's unused textures"
+				"craft's and additions licensed under the MIT License."
+				"Create More Mechanisms"
+			]
+			id: "7EDB7C9DFCF4F2A7"
+			size: 3.0d
+			tasks: [{
+				id: "0CF3C41808BCA177"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			title: "Credits"
+			x: -3.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"675883AA937E6E62"
+				"6859618C9827881F"
+			]
+			description: ["Unlocks the &cRed Research Flask&r. Used to research more advanced technologies."]
+			icon: "kubejs:red_research_flask"
+			id: "3299F53C8E16565E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "58D58C58A553CB84"
+					ignore_reward_blocking: true
+					stage: "red_flask"
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: "createdieselgenerators:diesel_engine"
+					id: "04C73E880D12B6A3"
+					title: "Chapter 2"
+					type: "custom"
+				}
+				{
+					auto: "invisible"
+					icon: "kubejs:red_research_flask"
+					id: "21991C886CB3B306"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "red_flask"
+					team_reward: true
+					type: "historystages:history_stage"
+				}
+			]
+			size: 3.0d
+			subtitle: "Unlocks the Red Research Flask"
+			tasks: [
+				{
+					count: 50L
+					id: "5DCCE45787D0A0F8"
+					item: { Count: 50, id: "create:iron_sheet" }
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "123343E38FB9E80C"
+					item: { Count: 30, id: "create:andesite_alloy" }
+					type: "item"
+				}
+				{
+					count: 80L
+					id: "38A68682428CAB0F"
+					item: { Count: 80, id: "create:cogwheel" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "66D49A246C4D634D"
+					item: { Count: 5, id: "create:windmill_bearing" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "336573A0CF51D418"
+					item: { Count: 5, id: "create_new_age:generator_coil" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "5CFE802B5BE4076D"
+					item: { Count: 20, id: "create_new_age:copper_wire" }
+					type: "item"
+				}
+			]
+			title: "Red Research Flask"
+			x: -3.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["4937AE3C355A10E4"]
+			description: ["Unlocks &aWindmills,&r an alternative way of generating Stress Units"]
+			icon: "create:windmill_bearing"
+			id: "675883AA937E6E62"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "10EBE40B90F3E8F3"
+					ignore_reward_blocking: true
+					stage: "create_power_2"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "6F8A71C195852254"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "power_2"
+					type: "historystages:history_stage"
+				}
+			]
+			size: 3.0d
+			subtitle: "Unlocks Windmills"
+			tasks: [
+				{
+					count: 10L
+					id: "27151886F9FDD72A"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "3583395EA7A1799F"
+					item: { Count: 30, id: "create:iron_sheet" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "2F7F9F408B2C2883"
+					item: { Count: 20, id: "immersive_aircraft:sail" }
+					type: "item"
+				}
+			]
+			title: "Power Generation (2)"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4937AE3C355A10E4"]
+			description: ["Unlocks very basic &aelectricity.&r"]
+			icon: "create_new_age:copper_wire"
+			id: "6859618C9827881F"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "0E1550D2ED572295"
+					ignore_reward_blocking: true
+					stage: "electricity_1"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "4F1FD09E9819350C"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "electricity_1"
+					type: "historystages:history_stage"
+				}
+			]
+			size: 3.0d
+			subtitle: "Unlock basic Electricity"
+			tasks: [
+				{
+					count: 100L
+					id: "1A6669D83114EB91"
+					item: { Count: 100, id: "create:copper_sheet" }
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "62739618239794AC"
+					item: { Count: 30, id: "create_new_age:magnetite_block" }
+					type: "item"
+				}
+			]
+			title: "Electricity (1)"
+			x: -6.0d
+			y: 8.0d
+		}
+	]
+	title: "Chapter 1"
+}
