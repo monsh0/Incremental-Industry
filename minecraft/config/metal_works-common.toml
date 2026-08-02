@@ -1,7 +1,0 @@
-
-[creative_tabs]
-	#If true, Metal Works items will be added to existing vanilla Creative Mode tabs.
-	populateVanillaTabs = true
-	#If true, a separate creative tab will be created for Weathered & Waxed Tin Blocks
-	separateWeatheredTin = false
-
