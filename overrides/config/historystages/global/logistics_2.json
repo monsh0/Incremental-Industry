@@ -1,0 +1,30 @@
+{
+  "display_name": "Logistics (3)",
+  "research_time": 20,
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min",
+  "items": [
+    "create:andesite_funnel",
+    "create:chute",
+    "create:belt_connector",
+    "create:gantry_carriage",
+    "create:gantry_shaft"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "create:crafting/kinetics/gantry_carriage",
+    "create:crafting/kinetics/gantry_shaft"
+  ],
+  "dimensions": [],
+  "structures": {
+    "structures": []
+  },
+  "entities": {
+    "spawnlock": [],
+    "attacklock": [],
+    "modLinked": []
+  },
+  "dependencies": []
+}

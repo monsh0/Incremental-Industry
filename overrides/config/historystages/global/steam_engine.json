@@ -1,0 +1,25 @@
+{
+  "display_name": "Steam Engine",
+  "research_time": 20,
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min",
+  "items": [
+    "create:steam_engine"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "kubejs:crafting/steam_engine"
+  ],
+  "dimensions": [],
+  "structures": {
+    "structures": []
+  },
+  "entities": {
+    "spawnlock": [],
+    "attacklock": [],
+    "modLinked": []
+  },
+  "dependencies": []
+}

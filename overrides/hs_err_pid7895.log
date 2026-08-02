@@ -1,0 +1,30 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f301140fd34, pid=7895, tid=7896
+#
+# JRE version: OpenJDK Runtime Environment Microsoft-11369869 (17.0.15+6) (build 17.0.15+6-LTS)
+# Java VM: OpenJDK 64-Bit Server VM Microsoft-11369869 (17.0.15+6-LTS, mixed mode, tiered, compressed oops, compressed class ptrs, g1 gc, linux-amd64)
+# Problematic frame:
+# C  0x00007f3011a5bc32
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %d %F %I" (or dumping to /home/monsh/.local/share/FreesmLauncher/instances/Incremental Industries/minecraft/core.7895)
+#
+# If you would like to submit a bug report, please visit:
+#   https://aka.ms/minecraftjavacrashes
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Duser.language=en -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1ReservePercent=20 -XX:G1HeapRegionSize=8M -XX:InitiatingHeapOccupancyPercent=15 -Dusing.aikars.flags=true -Daikars.new.flags=true -Xms512m -Xmx8064m -Djava.library.path=/home/monsh/.local/share/FreesmLauncher/instances/Incremental Industries/natives org.prismlauncher.EntryPoint
+
+Host: Intel(R) Xeon(R) CPU E3-1505M v5 @ 2.80GHz, 8 cores, 15G, Arch Linux
+Time: Wed Jul  8 14:05:37 2026 +0330 elapsed time: 931.549596 seconds (0d 0h 15m 31s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f30a802c650):  JavaThread "Render thread" [_thread_in_native, id=7896, stack(0x00007f30af500000,0x00007f30af600000)]
+
+Stack: [0x00007f30af500000,0x00007f30af600000]

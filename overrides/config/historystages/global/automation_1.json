@@ -1,0 +1,36 @@
+{
+  "display_name": "Automation (1)",
+  "research_time": 20,
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min",
+  "items": [
+    "create:mechanical_harvester",
+    "create:mechanical_drill",
+    "create:radial_chassis",
+    "create:mechanical_bearing",
+    "create:secondary_linear_chassis",
+    "create:linear_chassis"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "create:crafting/kinetics/mechanical_harvester",
+    "create:crafting/kinetics/mechanical_drill",
+    "create:crafting/kinetics/mechanical_bearing",
+    "create:crafting/kinetics/radial_chassis",
+    "create:crafting/kinetics/secondary_linear_chassis_from_conversion",
+    "create:crafting/kinetics/linear_chassis_from_conversion",
+    "create:crafting/kinetics/linear_chassis"
+  ],
+  "dimensions": [],
+  "structures": {
+    "structures": []
+  },
+  "entities": {
+    "spawnlock": [],
+    "attacklock": [],
+    "modLinked": []
+  },
+  "dependencies": []
+}

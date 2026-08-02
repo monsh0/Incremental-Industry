@@ -1,0 +1,12 @@
+================================================================
+  History Stages - Runtime Log
+  Session started: 2026-08-02 00:47:38
+  Mod Version: 5.5.1-1.20.1
+================================================================
+
+[00:47:14] [Server] Server started — cache initialized with 3 unlocked stages, 18 stages loaded
+[00:47:18] [Player Login] <Monsh0> Synced 18 stage definitions, 3 unlocked stages, 0 individual stages
+[00:47:23] [Inventory] <Monsh0> Dropped locked 'minecraft:wooden_sword' x1 from inventory [action: pickup]
+[00:47:25] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_sword' blocked [action: pickup]
+[00:47:29] [Reload] <Server> Reloaded stage configurations (18 stages)
+[00:47:38] [Server] Server stopping — flushing runtime log

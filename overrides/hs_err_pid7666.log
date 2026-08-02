@@ -1,0 +1,113 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007efbc8e1ad41, pid=7666, tid=7667
+#
+# JRE version: OpenJDK Runtime Environment Microsoft-11369869 (17.0.15+6) (build 17.0.15+6-LTS)
+# Java VM: OpenJDK 64-Bit Server VM Microsoft-11369869 (17.0.15+6-LTS, mixed mode, tiered, compressed class ptrs, z gc, linux-amd64)
+# Problematic frame:
+# C  0x00000000000032e4
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %d %F %I" (or dumping to /home/monsh/.local/share/FreesmLauncher/instances/Incremental Industries/minecraft/core.7666)
+#
+# If you would like to submit a bug report, please visit:
+#   https://aka.ms/minecraftjavacrashes
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Duser.language=en -XX:+UseZGC -Xms512m -Xmx8064m -Djava.library.path=/home/monsh/.local/share/FreesmLauncher/instances/Incremental Industries/natives org.prismlauncher.EntryPoint
+
+Host: Intel(R) Xeon(R) CPU E3-1505M v5 @ 2.80GHz, 8 cores, 15G, Arch Linux
+Time: Fri Jul 24 11:22:47 2026 +0330 elapsed time: 8193.340376 seconds (0d 2h 16m 33s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007efe4802edb0):  JavaThread "Render thread" [_thread_in_native, id=7667, stack(0x00007efe4ebcd000,0x00007efe4eccd000)]
+
+Stack: [0x00007efe4ebcd000,0x00007efe4eccd000],  sp=0x00007efe4ecc9488,  free space=1009k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  0x00000000000032e4
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 69560  org.lwjgl.opengl.GL11C.nglDeleteTextures(IJ)V org.lwjgl.opengl@3.3.1+7 (0 bytes) @ 0x00007efe40957d98 [0x00007efe40957d40+0x0000000000000058]
+j  org.lwjgl.opengl.GL11C.glDeleteTextures(I)V+20 org.lwjgl.opengl@3.3.1+7
+j  org.lwjgl.opengl.GL11.glDeleteTextures(I)V+1 org.lwjgl.opengl@3.3.1+7
+j  com.mojang.blaze3d.platform.GlStateManager._deleteTexture(I)V+4 minecraft@1.20.1
+j  com.mojang.blaze3d.platform.TextureUtil.releaseTextureId(I)V+4 minecraft@1.20.1
+j  net.minecraft.client.renderer.texture.AbstractTexture.m_117964_()V+30 minecraft@1.20.1
+j  net.minecraft.client.gui.font.FontTexture.close()V+1 minecraft@1.20.1
+j  net.minecraft.client.gui.font.FontSet.m_95080_()V+30 minecraft@1.20.1
+j  net.minecraft.client.gui.font.FontSet.close()V+5 minecraft@1.20.1
+j  net.minecraft.client.gui.font.FontManager$$Lambda$30936+0x0000000082879c50.accept(Ljava/lang/Object;)V+4 minecraft@1.20.1
+J 31473 c2 java.util.HashMap$Values.forEach(Ljava/util/function/Consumer;)V java.base@17.0.15 (119 bytes) @ 0x00007efe3e59ffb0 [0x00007efe3e59fec0+0x00000000000000f0]
+j  net.minecraft.client.gui.font.FontManager.close()V+14 minecraft@1.20.1
+j  net.minecraft.client.Minecraft.close()V+39 minecraft@1.20.1
+j  net.minecraft.client.Minecraft.m_91393_()V+79 minecraft@1.20.1
+j  net.minecraft.client.main.Main.main([Ljava/lang/String;)V+1635 minecraft@1.20.1
+v  ~StubRoutines::call_stub
+J 3351  jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; java.base@17.0.15 (0 bytes) @ 0x00007efe3d4d9dcb [0x00007efe3d4d9d40+0x000000000000008b]
+j  jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+133 java.base@17.0.15
+J 12478 c1 jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; java.base@17.0.15 (10 bytes) @ 0x00007efe367af0dc [0x00007efe367aefc0+0x000000000000011c]
+J 12476 c1 java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object; java.base@17.0.15 (65 bytes) @ 0x00007efe36827ac4 [0x00007efe36827780+0x0000000000000344]
+j  net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/ModuleLayer;)V+39 fmlloader@1.20.1-47.4.18
+j  net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService([Ljava/lang/String;Ljava/lang/ModuleLayer;)V+5 fmlloader@1.20.1-47.4.18
+j  net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0([Ljava/lang/String;Ljava/lang/ModuleLayer;)V+3 fmlloader@1.20.1-47.4.18
+j  net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler$$Lambda$1586+0x00000000807f4000.run()V+12 fmlloader@1.20.1-47.4.18
+j  cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch([Ljava/lang/String;Ljava/lang/ModuleLayer;)V+11 cpw.mods.modlauncher@10.0.9
+j  cpw.mods.modlauncher.LaunchServiceHandler.launch(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/ModuleLayer;Lcpw/mods/modlauncher/TransformingClassLoader;Lcpw/mods/modlauncher/LaunchPluginHandler;)V+58 cpw.mods.modlauncher@10.0.9
+j  cpw.mods.modlauncher.LaunchServiceHandler.launch(Lcpw/mods/modlauncher/ArgumentHandler;Ljava/lang/ModuleLayer;Lcpw/mods/modlauncher/TransformingClassLoader;Lcpw/mods/modlauncher/LaunchPluginHandler;)V+21 cpw.mods.modlauncher@10.0.9
+j  cpw.mods.modlauncher.Launcher.run([Ljava/lang/String;)V+307 cpw.mods.modlauncher@10.0.9
+j  cpw.mods.modlauncher.Launcher.main([Ljava/lang/String;)V+78 cpw.mods.modlauncher@10.0.9
+j  cpw.mods.modlauncher.BootstrapLaunchConsumer.accept([Ljava/lang/String;)V+1 cpw.mods.modlauncher@10.0.9
+j  cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(Ljava/lang/Object;)V+5 cpw.mods.modlauncher@10.0.9
+j  cpw.mods.bootstraplauncher.BootstrapLauncher.main([Ljava/lang/String;)V+515 cpw.mods.bootstraplauncher@1.1.2
+v  ~StubRoutines::call_stub
+j  jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+0 java.base@17.0.15
+j  jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+133 java.base@17.0.15
+j  jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6 java.base@17.0.15
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+59 java.base@17.0.15
+j  io.github.zekerzhayard.forgewrapper.installer.Main.main([Ljava/lang/String;)V+569
+j  java.lang.invoke.LambdaForm$DMH+0x0000000080004400.invokeStaticInit(Ljava/lang/Object;Ljava/lang/Object;)V+10 java.base@17.0.15
+j  java.lang.invoke.LambdaForm$MH+0x0000000080004c00.invokeExact_MT(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V+19 java.base@17.0.15
+j  org.prismlauncher.launcher.impl.StandardLauncher.launch()V+326
+j  org.prismlauncher.EntryPoint.listen()Lorg/prismlauncher/EntryPoint$ExitCode;+288
+j  org.prismlauncher.EntryPoint.main([Ljava/lang/String;)V+0
+v  ~StubRoutines::call_stub
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x00007efbc8e1ad41
+
+Registers:
+RAX=0x0000000000000000, RBX=0x00007efe4ab42480, RCX=0x00000000000032e4, RDX=0x000000000015f47e
+RSP=0x00007efe4ecc9480, RBP=0x00007efbca758ec0, RSI=0x00007efe4ecc9480, RDI=0x0000000000000001
+R8 =0x00007efe50528000, R9 =0x00007efe50528010, R10=0x000000000164de18, R11=0x000252dc61a2521e
+R12=0x0000000000000002, R13=0x00007efbb000d5c0, R14=0x00007efb937dab50, R15=0x00007efa81fa83e0
+RIP=0x00007efbc8e1ad41, EFLAGS=0x0000000000010246, CSGSFS=0x002b000000000033, ERR=0x0000000000000014
+  TRAPNO=0x000000000000000e
+
+XMM[0]=0x0000000000000000 0x0000000000000000
+XMM[1]=0x00007efb01122600 0x00007efb01122700
+XMM[2]=0x00007efb010d6e00 0x00007efb010d6f00
+XMM[3]=0x00007efb01122200 0x00007efb01122300
+XMM[4]=0x0000000000000000 0x4059000000000000
+XMM[5]=0x0000000000000000 0x3fa55555cf172b91
+XMM[6]=0x0000000000000000 0x00007efe4802edb0
+XMM[7]=0x0000000000000000 0x00007efe4802edb0
+XMM[8]=0x746e6f462f746e6f 0x662f6975672f746e
+XMM[9]=0x0000000000000000 0x0000000000000000
+XMM[10]=0x0000000000000000 0x0000000000000000
+XMM[11]=0x0000000000000000 0x0000000000000000
+XMM[12]=0x0000000000000000 0x0000000000000000
+XMM[13]=0x0000000000000000 0x0000000000fffdd6
+XMM[14]=0x0000000000000000 0x0000000000000000
+XMM[15]=0x0000000000000000 0x0000000000000000
+  MXCSR=0x00001fbf
+
+
+Register to memory mapping:
+
+RAX=0x0 is NULL
+RBX=0x00007efe4ab42480 points into unknown readable memory: 0x00007efbca675678 | 78 56 67 ca fb 7e 00 00
+RCX=

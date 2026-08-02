@@ -1,0 +1,28 @@
+{
+  "display_name": "Basic Processing",
+  "mode": "default",
+  "research_time": 20,
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "exact",
+  "items": [
+    "create:mechanical_press",
+    "create:mechanical_mixer"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "kubejs:kjs/create_mechanical_press",
+    "kubejs:kjs/create_mechanical_mixer"
+  ],
+  "dimensions": [],
+  "structures": {
+    "structures": []
+  },
+  "entities": {
+    "spawnlock": [],
+    "attacklock": [],
+    "modLinked": []
+  },
+  "dependencies": []
+}

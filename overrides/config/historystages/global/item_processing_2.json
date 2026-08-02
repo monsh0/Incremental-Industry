@@ -1,0 +1,28 @@
+{
+  "display_name": "Item Processing (2)",
+  "mode": "default",
+  "research_time": 20,
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min",
+  "items": [
+    "create:mechanical_crafter",
+    "create:crafter_slot_cover"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "kubejs:crafting/crafter_slot_cover",
+    "kubejs:crafting/mechanical_crafter"
+  ],
+  "dimensions": [],
+  "structures": {
+    "structures": []
+  },
+  "entities": {
+    "spawnlock": [],
+    "attacklock": [],
+    "modLinked": []
+  },
+  "dependencies": []
+}

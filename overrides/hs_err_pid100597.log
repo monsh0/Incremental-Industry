@@ -1,0 +1,21 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f43066103bc, pid=100597, tid=100746
+#
+# JRE version: OpenJDK Runtime Environment Microsoft-11369869 (17.0.15+6) (build 17.0.15+6-LTS)
+# Java VM: OpenJDK 64-Bit Server VM Microsoft-11369869 (17.0.15+6-LTS, mixed mode, tiered, compressed class ptrs, z gc, linux-amd64)
+# Problematic frame:
+# C  0x000000006a6731d3
+#
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %d %F %I" (or dumping to /home/monsh/.local/share/FreesmLauncher/instances/Incremental Industries/minecraft/core.100597)
+#
+# If you would like to submit a bug report, please visit:
+#   https://aka.ms/minecraftjavacrashes
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Duser.language=en -XX:+UseZGC -Dfml.ignoreVersionCheck=true -Dorg.lwjgl.util.Debug=true -Dorg.lwjgl.glfw.Debug=true -Xms512m -Xmx8064m -Djava.library.path=/home/monsh/.local/share/FreesmLauncher/instances/Incremental Industries/natives org.prismlauncher.EntryPoint
+
+Host: Intel(R) Xeon(R) CPU E3-1505M v5 @ 2.80GHz, 8 cores, 15G, Arch Linux

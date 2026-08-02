@@ -1,0 +1,29 @@
+{
+	menuAlert: false,
+	chatAlert: false,
+	chatMessage: "There is an update available for your modpack!",
+	platform: "MODRINTH",
+	modpackName: "Incremental Industry",
+	modpackId: "my-modpack",
+	modpackHome: "https://github.com/me/My-Modpack",
+	localVersion: "0.0.1",
+	checkMcVersion: false,
+	loader: "forge",
+	versionAPI: "https://raw.githubusercontent.com/me/My-Modpack/main/Packwiz/pack.toml",
+	changelogLink: "https://raw.githubusercontent.com/me/My-Modpack/main/CHANGELOG.md",
+	versionType: [
+		"release",
+		"beta",
+		"alpha"
+	],
+	nameFilters: [],
+	versionFilters: [],
+	chatWelcome: false,
+	chatWelcomeMessage: "Welcome to <modpack-name> <version>!",
+	customIcon: false,
+	customTitle: true,
+	title: "<modpack-name> <version> | Minecraft <mc>",
+	ramMenuAlert: true,
+	ramChatAlert: false,
+	minRam: 6000
+}
