@@ -1,0 +1,13 @@
+name = "Incremental Industry"
+author = "monsh0"
+version = "0.0.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "0d6fd7ced2dba0a7ef2e8a88c3e8085b8947b984b8370b5b4a90e1db0153d1eb"
+
+[versions]
+forge = "47.4.22"
+minecraft = "1.20.1"
