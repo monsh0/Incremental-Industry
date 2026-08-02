@@ -1,4 +1,4 @@
-name: Build and Release Modpack
+name: Release Version
 
 on:
   push:
