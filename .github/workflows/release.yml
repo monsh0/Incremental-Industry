@@ -1,0 +1,40 @@
+name: Build and Release Modpack
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Check out your code
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Build mrpack
+        run: |
+          # Create the zip (exclude .git and any other unwanted files)
+          zip -r -9 "../${{ github.event.repository.name }}-${{ github.ref_name }}.mrpack" . \
+            -x ".git/*" \
+            -x ".github/*" \
+            -x "*.mrpack" \
+            -x "*.zip" \
+            -x ".gitignore"
+          
+          # Move it to the current directory for easy access
+          mv "../${{ github.event.repository.name }}-${{ github.ref_name }}.mrpack" .
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            ${{ github.event.repository.name }}-${{ github.ref_name }}.mrpack
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
