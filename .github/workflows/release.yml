@@ -16,25 +16,32 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set variables
+        id: vars
+        run: |
+          echo "filename=${{ github.event.repository.name }}-${{ github.ref_name }}.mrpack" >> $GITHUB_OUTPUT
+          if [[ "${{ github.ref_name }}" == *"-"* ]]; then
+            echo "prerelease=true" >> $GITHUB_OUTPUT
+          else
+            echo "prerelease=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Build mrpack
         run: |
-          zip -r -9 "../${{ github.event.repository.name }}-${{ github.ref_name }}.mrpack" . \
-            -x ".git/*" \
-            -x ".github/*" \
-            -x "*.mrpack" \
-            -x "*.zip" \
-            -x ".gitignore"
-          mv "../${{ github.event.repository.name }}-${{ github.ref_name }}.mrpack" .
+          zip -r -9 "../${{ steps.vars.outputs.filename }}" . -x "@.gitignore"
+          mv "../${{ steps.vars.outputs.filename }}" .
+          sha256sum "${{ steps.vars.outputs.filename }}" > checksum.txt
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            ${{ github.event.repository.name }}-${{ github.ref_name }}.mrpack
+            ${{ steps.vars.outputs.filename }}
+            checksum.txt
           tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
           draft: false
-          prerelease: false
+          prerelease: ${{ steps.vars.outputs.prerelease }}
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
