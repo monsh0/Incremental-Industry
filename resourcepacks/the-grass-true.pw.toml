@@ -1,0 +1,13 @@
+name = "The Grass True"
+filename = "The Grass True.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b995008c503e47c1459838bf0aaa41128096983e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7808922
+project-id = 1222860

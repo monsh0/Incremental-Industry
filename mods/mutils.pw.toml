@@ -1,0 +1,13 @@
+name = "ModpackUtils"
+filename = "ModpackUtils-1.1.0+forge.1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "412bfba13ae0976b5aec464b87c58efca92eb01c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5946381
+project-id = 1135297

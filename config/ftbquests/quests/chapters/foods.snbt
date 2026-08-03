@@ -1,0 +1,115 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "foods"
+	group: "41CF927381543495"
+	id: "0709FFEE973DED83"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Get 1 of each soup"]
+			hide_until_deps_visible: false
+			id: "0768C42E66A7D701"
+			shape: "rsquare"
+			size: 2.5d
+			tasks: [
+				{
+					id: "4D143BD58561F09F"
+					item: "minecraft:beetroot_soup"
+					type: "item"
+				}
+				{
+					id: "5A3FDDB12898D5F6"
+					item: "farmersdelight:chicken_soup"
+					type: "item"
+				}
+				{
+					id: "1BC8FA6E07556607"
+					item: "farmersdelight:vegetable_soup"
+					type: "item"
+				}
+				{
+					id: "00F900CBFDFF1A5E"
+					item: "farmersdelight:pumpkin_soup"
+					type: "item"
+				}
+				{
+					id: "7C46108E0AB6B2D8"
+					item: "farmersdelight:noodle_soup"
+					type: "item"
+				}
+				{
+					id: "2EDE7C8D935ECB8A"
+					item: "farmersdelight:onion_soup"
+					type: "item"
+				}
+			]
+			title: "Soup collector"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0768C42E66A7D701"]
+			description: ["Get 100 of each soup."]
+			id: "70667E2824D46EEA"
+			shape: "diamond"
+			size: 4.0d
+			tasks: [
+				{
+					count: 100L
+					id: "450BA9750AA9DEBE"
+					item: { Count: 100, id: "minecraft:beetroot_soup" }
+					type: "item"
+				}
+				{
+					count: 100L
+					id: "7A319ECC98CEC552"
+					item: { Count: 100, id: "farmersdelight:chicken_soup" }
+					type: "item"
+				}
+				{
+					count: 100L
+					id: "045C83E1AC29C0F1"
+					item: { Count: 100, id: "farmersdelight:vegetable_soup" }
+					type: "item"
+				}
+				{
+					count: 100L
+					id: "6445A302691EC5E9"
+					item: { Count: 100, id: "farmersdelight:pumpkin_soup" }
+					type: "item"
+				}
+				{
+					count: 100L
+					id: "4804A82143EB21E7"
+					item: { Count: 100, id: "farmersdelight:noodle_soup" }
+					type: "item"
+				}
+				{
+					count: 100L
+					id: "0CA7A0DB8D63C395"
+					item: { Count: 100, id: "farmersdelight:onion_soup" }
+					type: "item"
+				}
+			]
+			title: "Ultimate Soup Collector"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			id: "555387EB1776C082"
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "5CDBDEA662FBD0A9"
+				max_input: 1000L
+				type: "forge_energy"
+				value: 1000000L
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+	]
+	title: "Foods"
+}

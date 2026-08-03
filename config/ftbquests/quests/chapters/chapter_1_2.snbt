@@ -1,0 +1,163 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "chapter_1_2"
+	group: "1ABB0AD0F1045D1C"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
+	id: "3E2BB2BD80C28202"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Can transfer rotational power. does not cost any Stress Units"]
+			id: "65E43F8941AF4356"
+			invisible: true
+			tasks: [{
+				id: "719BE151F0774EB8"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.5d
+		}
+		{
+			description: ["Allows changing the direction of Rotational Power"]
+			id: "277D28D77558F81D"
+			invisible: true
+			tasks: [{
+				id: "6CEE9E18754447E3"
+				item: "create:gearbox"
+				type: "item"
+			}]
+			title: "Gearboxes"
+			x: -5.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"Transfers rotational power between shafts. can be used to change direction or transfer Stress Units vertically."
+				"Costs small amount of Stress Units"
+			]
+			id: "724212DE7D21E7C8"
+			invisible: true
+			tasks: [{
+				id: "768338771C6214EE"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["724212DE7D21E7C8"]
+			description: ["Cogwheels of different sizes affect rotational speed when connected."]
+			id: "139874E68B8EA533"
+			tasks: [
+				{
+					id: "16AC4F4329430AE8"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "2DB6EFDF2A50F1BA"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			title: "Gear Shifting"
+			x: -7.5d
+			y: -2.5d
+		}
+		{
+			description: ["Rotations Per Minute (RPM) is the speed of your machines. Higher RPM uses more Stress Units"]
+			id: "4B564A3068977727"
+			invisible: true
+			tasks: [{
+				icon: "create:speedometer"
+				id: "4A3B8DF0DDA32B35"
+				observe_type: 0
+				timer: 0L
+				title: "RPM"
+				to_observe: "create:speedometer"
+				type: "observation"
+			}]
+			title: "RPM"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"Welcome to the modpack! This guide contains important things you should know."
+				"Click the green arrow at the bottom left of the opened panel to go to the next page."
+				""
+				"{@pagebreak}"
+				""
+				"&lPONDER AND EMI:&r"
+				"Hold &2&nW&r while holding certain items to open a screen called &aPonder&r, which teaches you how that item works. "
+				"Use &6EMI&r to view recipes and crafting recipes."
+				""
+				"it is highly reccomended to use both of these features to figure out how things work."
+				""
+				"{@pagebreak}"
+				""
+				"&lResearch System:&r"
+				"In the RESEARCH section of the quest book are Researches. You &nsubmit&r items to the quest, which in turn unlocks various items and recipes for you. Researches are mandatory for progression."
+				"If you haven't unlocked something it shows a little lock icon and tells you the research required."
+				""
+				"{@pagebreak}"
+				""
+				"&lVANILLA CHANGES:&r"
+				"This modpack changes some core vanilla systems."
+				""
+				"Enchanting tables are removed."
+				"Vanilla potion brewing is removed."
+				"Villagers and villages do not generate."
+				"Most surface structures have been removed."
+				""
+				""
+				"{@pagebreak}"
+				"&lMULTIPLAYER:&r"
+				"This modpack is meant to be played in singleplayer. Things may break if you play it on multiplayer."
+			]
+			icon: "minecraft:book"
+			id: "7B8A25512C9DF291"
+			invisible: true
+			size: 2.5d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:book"
+				id: "1CDD8F24CC4480A3"
+				title: "Ponder"
+				type: "dimension"
+			}]
+			title: "Welcome"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"Furnace Shortcuts."
+				""
+				"You can quickly manage your furnaces without opening the GUI. &nCtrl&r + &nLeft Click&r to perform the following actions:"
+				""
+				"&lEmpty hand&r: Instantly collect the finished smelting result."
+				""
+				"&lHolding fuel&r: Insert the fuel directly into the fuel slot."
+				""
+				"&lHolding a smeltable item&r: Place the item into the input slot."
+				""
+				"This works on &nFurnaces&r, &nSmokers&r and &nBlast Furnaces&r"
+			]
+			id: "70E1FF3D8CAC744C"
+			tasks: [{
+				id: "54E8BE8C756EECBD"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+	]
+	title: "Chapter 1 Info"
+}

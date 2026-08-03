@@ -1,0 +1,16 @@
+name = "Simple Metals: Aluminum"
+filename = "simplemetals-aluminum-2.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1fb34b1f05f3485b74ada08028e18759c075476d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5512350
+project-id = 974041
+
+[option]
+optional = true

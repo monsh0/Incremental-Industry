@@ -1,0 +1,281 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "chapter_2"
+	group: "73B33364BF0B9CED"
+	icon: "kubejs:plastic_bar"
+	id: "182A48019E4DD69C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["64BC66108342780A"]
+			description: ["Unlocks &aBelts&r, &afunnel&r, &aChute&r, Gantry shaft and Gantry carriage &m&9portable storage interface, parallel gearbox, 6-way gearbox&r&r"]
+			hide_until_deps_complete: false
+			icon: "create:belt_connector"
+			id: "532D4F49877F9755"
+			rewards: [{
+				auto: "invisible"
+				id: "79FB5FF2EEE98457"
+				ignore_reward_blocking: true
+				individual: false
+				remove: false
+				stage: "logistics_2"
+				type: "historystages:history_stage"
+			}]
+			shape: "gear"
+			size: 3.25d
+			tasks: [{
+				count: 3L
+				id: "0097CAC6E63B4D80"
+				item: "kubejs:red_research_flask"
+				type: "item"
+			}]
+			title: "Logistics (3)"
+			x: 6.5d
+			y: 3.25d
+		}
+		{
+			dependencies: [
+				"3299F53C8E16565E"
+				"031496307FF3FCD4"
+			]
+			description: ["Unlocks &6Plant Oil&r, &6Ethanol&r, &6Biodiesel&r. &aBiomass&r and &aBurner&r which unlocks Heated basin recipes and basin lid."]
+			hide_until_deps_complete: true
+			icon: "createdieselgenerators:ethanol_bucket"
+			id: "64BC66108342780A"
+			rewards: [{
+				id: "04705C44C83F8613"
+				ignore_reward_blocking: true
+				individual: false
+				remove: false
+				stage: "basic_oil_processing"
+				type: "historystages:history_stage"
+			}]
+			shape: "diamond"
+			size: 5.0d
+			tasks: [{
+				count: 5L
+				id: "731BE59EBCBBA008"
+				item: { Count: 5, id: "kubejs:red_research_flask" }
+				type: "item"
+			}]
+			title: "Basic Oil Processing"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B2062CEA9E63FA4"]
+			description: ["unlocks the small and modular diesel engines, high RPM, compact but more expensive per unit."]
+			icon: "createdieselgenerators:diesel_engine"
+			id: "68188FFE992B24A0"
+			rewards: [{
+				id: "06EA0D64F42A7C82"
+				ignore_reward_blocking: true
+				individual: false
+				remove: false
+				stage: "diesel_engine"
+				type: "historystages:history_stage"
+			}]
+			shape: "gear"
+			size: 3.0d
+			tasks: [
+				{
+					count: 25L
+					id: "52C09D271421F4F0"
+					item: "kubejs:red_research_flask"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "010251537E532442"
+					item: { Count: 10, id: "kubejs:yellow_research_flask" }
+					type: "item"
+				}
+			]
+			title: "Diesel Engine"
+			x: 21.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3B2062CEA9E63FA4"]
+			description: ["unlocks steam engine, takes a large space and generates lower RPM but higher Stress Units."]
+			icon: "create:steam_engine"
+			id: "5F889708F4D221A2"
+			rewards: [{
+				id: "3D61372A74F74D01"
+				ignore_reward_blocking: true
+				individual: false
+				remove: false
+				stage: "steam_engine"
+				type: "historystages:history_stage"
+			}]
+			shape: "gear"
+			size: 3.0d
+			tasks: [
+				{
+					count: 25L
+					id: "7656ABAC1B690165"
+					item: "kubejs:red_research_flask"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "2146BA799A101280"
+					item: { Count: 10, id: "kubejs:yellow_research_flask" }
+					type: "item"
+				}
+			]
+			title: "Steam Engine"
+			x: 21.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3B2062CEA9E63FA4"]
+			description: ["Unlocks the mechanical crafter."]
+			icon: "create:mechanical_crafter"
+			id: "5732FA846E30FD67"
+			shape: "gear"
+			size: 3.0d
+			tasks: [
+				{
+					count: 25L
+					id: "0765A3C5A796BC43"
+					item: { Count: 20, id: "kubejs:red_research_flask" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "3611B10365A3F45B"
+					item: { Count: 10, id: "kubejs:yellow_research_flask" }
+					type: "item"
+				}
+			]
+			title: "Item Processing (2)"
+			x: 22.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3299F53C8E16565E"
+				"031496307FF3FCD4"
+			]
+			description: ["Unlocks: Harvester, Mining Drill, various types of chassis, and mechanical bearing."]
+			hide_until_deps_complete: true
+			icon: "create:mechanical_harvester"
+			id: "367CA30143C79E9D"
+			rewards: [{
+				id: "60FEC6A06E748A0A"
+				ignore_reward_blocking: true
+				individual: false
+				remove: false
+				stage: "automation_1"
+				type: "historystages:history_stage"
+			}]
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				count: 3L
+				id: "72E89DDB6609EFD1"
+				item: "kubejs:red_research_flask"
+				type: "item"
+			}]
+			title: "Automation (1)"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3299F53C8E16565E"
+				"3299F53C8E16565E"
+			]
+			description: ["Unlocks: gearshift, six-way and parallel gearbox, Clutches and portable storage interface."]
+			hide_until_deps_complete: true
+			icon: "create:gearshift"
+			id: "50688ABEB8C02324"
+			rewards: [{
+				id: "6F61DA273DD85608"
+				ignore_reward_blocking: true
+				individual: false
+				remove: false
+				stage: "logistics_two"
+				type: "historystages:history_stage"
+			}]
+			shape: "octagon"
+			size: 3.0d
+			tasks: [{
+				count: 10L
+				id: "3C223466D6ACB1B7"
+				item: { Count: 10, id: "kubejs:red_research_flask" }
+				type: "item"
+			}]
+			title: "Logistics (2)"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["64BC66108342780A"]
+			description: ["Unlocks more advanced researches."]
+			icon: "kubejs:yellow_research_flask"
+			id: "38D5CE0B927B4CED"
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				count: 10L
+				id: "17298B52BEE2BDD7"
+				item: { Count: 10, id: "kubejs:red_research_flask" }
+				type: "item"
+			}]
+			title: "Yellow Research Flask"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38D5CE0B927B4CED"]
+			description: ["Unlock Steel, a crafting component used in many recipes."]
+			icon: "create_ironworks:steel_ingot"
+			id: "3B2062CEA9E63FA4"
+			shape: "gear"
+			size: 3.0d
+			tasks: [
+				{
+					count: 5L
+					id: "1562DE6E3E30F97D"
+					item: { Count: 5, id: "kubejs:yellow_research_flask" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "26EA5846B6B156B0"
+					item: { Count: 20, id: "kubejs:red_research_flask" }
+					type: "item"
+				}
+			]
+			title: "Steel"
+			x: 15.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5732FA846E30FD67"]
+			description: [
+				"               &dThe ultimate food!&r"
+				"{image:farmersdelight:item/honey_glazed_ham_block width:100 height:100 align:center}"
+				"&r Craft 10 &6Honey Glazed Ham"
+			]
+			id: "7B4EEC2A5253E929"
+			optional: true
+			shape: "octagon"
+			size: 2.5d
+			tasks: [{
+				consume_items: false
+				count: 10L
+				id: "094F39EE4EF70D41"
+				item: { Count: 10, id: "farmersdelight:honey_glazed_ham_block" }
+				type: "item"
+			}]
+			x: 27.5d
+			y: 0.0d
+		}
+	]
+	title: "Chapter 2"
+}

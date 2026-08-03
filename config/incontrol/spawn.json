@@ -1,0 +1,83 @@
+[
+    {
+        "mob": ["minecraft:creeper"],
+        "seesky": false,
+        "maxheight": 30,
+        "healthset": 16.0,
+        "result": "allow"
+    },
+    {
+        "mob": ["minecraft:creeper"],
+        "result": "deny"
+    },
+    {
+        "mob": ["minecraft:spider"],
+        "seesky": false,
+        "maxheight": 50,
+        "result": "allow",
+        "speedmultiply": 1.5
+    },
+    {
+        "mob": ["minecraft:spider"],
+        "result": "deny"
+    },
+    {
+        "mob": ["minecraft:skeleton"],
+        "healthset": 10.0,
+        "armorhelmet": ["minecraft:iron_helmet"]
+    },
+    {
+        "mob": ["minecraft:zombie"],
+        "speedmultiply": 1.4
+    },
+    {
+        "mob": ["minecraft:cow"],
+        "healthset": 16.0
+    },
+    {
+        "mob": ["minecraft:sheep"],
+        "healthset": 12.0
+    },
+    {
+        "mob": ["minecraft:pig"],
+        "healthset": 14.0
+    },
+    {
+        "mob": ["minecraft:chicken"],
+        "healthset": 2.0
+    },
+    {
+        "mob": ["minecraft:cave_spider"],
+        "seesky": false,
+        "maxheight": 0,
+        "healthset": 4.0,
+        "speedmultiply": 2.5,
+        "result": "allow"
+    },
+    {
+        "mob": ["minecraft:cave_spider"],
+        "result": "deny"
+    },
+    {
+        "mob": ["minecraft:witch"],
+        "seesky": false,
+        "maxheight": 50,
+        "result": "allow"
+    },
+    {
+        "mob": ["minecraft:witch"],
+        "result": "deny"
+    },
+    {
+        "mob": ["minecraft:zombie_villager"],
+        "result": "deny"
+    },
+    {
+        "mob": ["minecraft:villager"],
+        "result": "deny"
+    },
+    {
+        "mob": ["minecraft:wandering_trader"],
+        "result": "deny"
+    }
+]

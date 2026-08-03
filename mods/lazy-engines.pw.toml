@@ -1,0 +1,16 @@
+name = "Create: Lazy Engines"
+filename = "lazyengines-1.2.1-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "fd746a3143629c7e7e5190ae413d5edc5bd52f65"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6488714
+project-id = 1032011
+
+[option]
+optional = true

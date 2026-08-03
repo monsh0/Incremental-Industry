@@ -1,0 +1,16 @@
+name = "Flowing Fluids"
+filename = "flowing_fluids-1.0.6-1.20.1-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "eb52431e9572ad7f3cf2f9ad0afd37b3118340ec"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8051289
+project-id = 1108809
+
+[option]
+optional = true

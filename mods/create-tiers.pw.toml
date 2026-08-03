@@ -1,0 +1,13 @@
+name = "Create Tiers"
+filename = "create-tiers-forge-1.20.1-0.2.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2a18267edbe1fcc4499c1303d086a26e83e366b0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8375583
+project-id = 1487875

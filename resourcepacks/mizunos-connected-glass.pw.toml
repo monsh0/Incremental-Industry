@@ -1,0 +1,13 @@
+name = "Mizuno's Connected Glass"
+filename = "Mizuno's Connected Glass.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "117f10ad8939811def1be47edd4774962cc6b479"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7808890
+project-id = 1284192

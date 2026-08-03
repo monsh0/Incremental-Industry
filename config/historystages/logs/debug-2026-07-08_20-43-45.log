@@ -1,0 +1,250 @@
+================================================================
+  History Stages - Diagnostic Report
+  Generated: 2026-07-08 20:43:45
+  Mod Version: 5.4.0-1.20.1
+  Minecraft Forge: 47.4.10
+================================================================
+
+  Global stages loaded:     16
+  Individual stages loaded: 0
+  Total issues:             1  (Errors: 0  |  Warnings: 1  |  Info: 0)
+
+  Total entries across global stages:
+    Items: 48  |  Tags: 0  |  Mods: 2  |  Mod Exceptions: 0
+    Recipes: 41  |  Dimensions: 0  |  Structures: 0
+    Entities (attacklock): 0  |  Entities (spawnlock): 4
+
+================================================================
+  ISSUES
+================================================================
+
+--- Unknown Items ------------------------------------------
+
+  [WARN]  Item 'createaddition:biomass' is a valid ResourceLocation but does not exist in the item registry (Stage: basic_oil_processing). Typo or missing mod?
+
+================================================================
+  LOADED GLOBAL STAGES (16)
+================================================================
+
+--- logistics_1 (Logistics (1)) --------------------------
+  Research time: 20s (custom)
+  Total entries: 10
+  Items (4):
+    - create:cogwheel
+    - create:large_cogwheel
+    - create:shaft
+    - create:gearbox
+  Recipes (4):
+    - kubejs:kjs/create_cogwheel
+    - kubejs:kjs/create_large_cogwheel
+    - kubejs:kjs/create_shaft
+    - kubejs:kjs/create_gearbox
+  Entities (spawnlock) (2):
+    - minecraft:zombie
+    - minecraft:creeper
+
+--- electricity_1 (electricity (1)) ----------------------
+  Research time: 20s (custom)
+  Total entries: 5
+  Items (4):
+    - create_new_age:generator_coil
+    - create_new_age:basic_motor
+    - create_new_age:electrical_connector
+    - create_new_age:copper_wire
+  Recipes (1):
+    - kubejs:create/sequenced/copper_wire_1
+
+--- logistics_2 (Logistics (3)) --------------------------
+  Research time: 20s (custom)
+  Total entries: 7
+  Items (5):
+    - create:andesite_funnel
+    - create:chute
+    - create:belt_connector
+    - create:gantry_carriage
+    - create:gantry_shaft
+  Recipes (2):
+    - create:crafting/kinetics/gantry_carriage
+    - create:crafting/kinetics/gantry_shaft
+
+--- fluid_handling (Fluid Handling (1)) ------------------
+  Research time: 20s (custom)
+  Total entries: 6
+  Items (3):
+    - create:mechanical_pump
+    - create:fluid_pipe
+    - create:fluid_tank
+  Recipes (3):
+    - create:crafting/kinetics/mechanical_pump
+    - kubejs:crafting/fluid_pipe
+    - kubejs:crafting/fluid_tank
+
+--- diesel_engine (Diesel Engine) ------------------------
+  Research time: 20s (custom)
+  Total entries: 2
+  Items (2):
+    - createdieselgenerators:diesel_engine
+    - createdieselgenerators:large_diesel_engine
+
+--- red_flask (Red Research Flask) -----------------------
+  Research time: 20s (custom)
+  Total entries: 2
+  Items (1):
+    - kubejs:red_research_flask
+  Recipes (1):
+    - kubejs:create/sequenced/red_research_flask_1
+
+--- steam_engine (Steam Engine) --------------------------
+  Research time: 20s (custom)
+  Total entries: 2
+  Items (1):
+    - create:steam_engine
+  Recipes (1):
+    - kubejs:crafting/steam_engine
+
+--- basic_processing (Basic Processing) ------------------
+  Research time: 20s (custom)
+  Total entries: 6
+  Items (2):
+    - create:mechanical_press
+    - create:mechanical_mixer
+  Recipes (2):
+    - kubejs:kjs/create_mechanical_press
+    - kubejs:kjs/create_mechanical_mixer
+  Entities (spawnlock) (2):
+    - minecraft:skeleton
+    - minecraft:spider
+
+--- vertical_gearbox (Vertical Gearbox) ------------------
+  Research time: 20s (custom)
+  Total entries: 2
+  Items (1):
+    - create:vertical_gearbox
+  Recipes (1):
+    - kubejs:kjs/create_vertical_gearbox
+
+--- logistics_two (Logistics (2)) ------------------------
+  Research time: 20s (custom)
+  Total entries: 20
+  Items (9):
+    - create:portable_storage_interface
+    - create_connected:six_way_gearbox
+    - create_connected:vertical_six_way_gearbox
+    - create_connected:parallel_gearbox
+    - create_connected:vertical_parallel_gearbox
+    - create:gearshift
+    - create_connected:inverted_gearshift
+    - create:clutch
+    - create_connected:inverted_clutch
+  Recipes (11):
+    - create_connected:crafting/kinetics/parallel_gearbox_from_conversion
+    - kubejs:crafting/parallel_gearbox
+    - create_connected:crafting/kinetics/vertical_parallel_gearbox_from_conversion
+    - create_connected:crafting/kinetics/vertical_six_way_gearbox_from_conversion
+    - create:crafting/kinetics/portable_storage_interface
+    - create_connected:crafting/kinetics/inverted_gearshift_from_conversion
+    - create_connected:crafting/kinetics/gearshift_from_conversion
+    - create:crafting/kinetics/gearshift
+    - create_connected:crafting/kinetics/clutch_from_conversion
+    - create:crafting/kinetics/clutch
+    - create_connected:crafting/kinetics/inverted_clutch_from_conversion
+
+--- power_1 (Power (1)) ----------------------------------
+  Research time: 20s (custom)
+  Total entries: 4
+  Items (2):
+    - create:water_wheel
+    - create:large_water_wheel
+  Recipes (2):
+    - kubejs:kjs/create_large_water_wheel
+    - kubejs:kjs/create_water_wheel
+
+--- power_2 (Power (2)) ----------------------------------
+  Research time: 20s (custom)
+  Total entries: 2
+  Items (1):
+    - create:windmill_bearing
+  Recipes (1):
+    - kubejs:kjs/create_windmill_bearing
+
+--- automation_2 (Automation (2)) ------------------------
+  Research time: 20s (custom)
+  Total entries: 2
+  Items (1):
+    - create:cart_assembler
+  Recipes (1):
+    - create:crafting/kinetics/cart_assembler
+
+--- automation_1 (Automation (1)) ------------------------
+  Research time: 20s (custom)
+  Total entries: 13
+  Items (6):
+    - create:mechanical_harvester
+    - create:mechanical_drill
+    - create:radial_chassis
+    - create:mechanical_bearing
+    - create:secondary_linear_chassis
+    - create:linear_chassis
+  Recipes (7):
+    - create:crafting/kinetics/mechanical_harvester
+    - create:crafting/kinetics/mechanical_drill
+    - create:crafting/kinetics/mechanical_bearing
+    - create:crafting/kinetics/radial_chassis
+    - create:crafting/kinetics/secondary_linear_chassis_from_conversion
+    - create:crafting/kinetics/linear_chassis_from_conversion
+    - create:crafting/kinetics/linear_chassis
+
+--- disabled (void) --------------------------------------
+  Research time: 20s (custom)
+  Total entries: 5
+  Mods (2):
+    - createestrogen
+    - estrogen
+  Recipes (3):
+    - createdieselgenerators:compat/createaddition/copper_wire
+    - create:milling/cobblestone
+    - create:splashing/gravel
+
+--- basic_oil_processing (Basic Oil Processing) ----------
+  Research time: 20s (custom)
+  Total entries: 7
+  Items (6):
+    - createdieselgenerators:plant_oil_bucket
+    - createdieselgenerators:biodiesel_bucket
+    - createdieselgenerators:ethanol_bucket
+    - createaddition:biomass
+    - createdieselgenerators:burner
+    - createdieselgenerators:basin_lid
+  Recipes (1):
+    - createdieselgenerators:crafting/basin_lid
+
+================================================================
+  CONFIG SNAPSHOT
+================================================================
+
+  [common]
+    lockMobLoot          = true
+    lockBlockBreaking    = true
+    lockBlockBreakSpeed  = 0.01
+    lockItemUsage        = true
+    lockEntityItems      = true
+    lockBlockInteraction = true
+    researchTimeSeconds  = 20
+    useReplacements      = true
+    broadcastChat        = false
+    useSounds            = false
+    useToasts            = false
+    showDebugErrors      = true
+    enableRuntimeLogging = true
+
+================================================================
+  This file was auto-generated by History Stages.
+  It is created when issues are found during stage loading.
+  Share this file when reporting bugs.
+
+  Global stages:     config/historystages/global/
+  Individual stages: config/historystages/individual/
+  Log files:         config/historystages/logs/
+  Disable chat debug messages: showDebugErrors=false
+  in historystages-common.toml
+================================================================

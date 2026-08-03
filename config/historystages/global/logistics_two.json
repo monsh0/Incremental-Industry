@@ -1,0 +1,43 @@
+{
+  "display_name": "Logistics (2)",
+  "research_time": 20,
+  "min_pedestal_tier": 1,
+  "pedestal_tier_mode": "min",
+  "items": [
+    "create:portable_storage_interface",
+    "create_connected:six_way_gearbox",
+    "create_connected:vertical_six_way_gearbox",
+    "create_connected:parallel_gearbox",
+    "create_connected:vertical_parallel_gearbox",
+    "create:gearshift",
+    "create_connected:inverted_gearshift",
+    "create:clutch",
+    "create_connected:inverted_clutch"
+  ],
+  "tags": [],
+  "mods": [],
+  "mod_exceptions": [],
+  "recipes": [
+    "create_connected:crafting/kinetics/parallel_gearbox_from_conversion",
+    "kubejs:crafting/parallel_gearbox",
+    "create_connected:crafting/kinetics/vertical_parallel_gearbox_from_conversion",
+    "create_connected:crafting/kinetics/vertical_six_way_gearbox_from_conversion",
+    "create:crafting/kinetics/portable_storage_interface",
+    "create_connected:crafting/kinetics/inverted_gearshift_from_conversion",
+    "create_connected:crafting/kinetics/gearshift_from_conversion",
+    "create:crafting/kinetics/gearshift",
+    "create_connected:crafting/kinetics/clutch_from_conversion",
+    "create:crafting/kinetics/clutch",
+    "create_connected:crafting/kinetics/inverted_clutch_from_conversion"
+  ],
+  "dimensions": [],
+  "structures": {
+    "structures": []
+  },
+  "entities": {
+    "spawnlock": [],
+    "attacklock": [],
+    "modLinked": []
+  },
+  "dependencies": []
+}

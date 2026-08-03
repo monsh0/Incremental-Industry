@@ -1,0 +1,457 @@
+{
+	autofocus_id: "6D7393312B01F6AB"
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	disable_toast: true
+	filename: "chapter_1"
+	group: "73B33364BF0B9CED"
+	hide_quest_until_deps_visible: true
+	icon: "create:andesite_alloy"
+	id: "04EDD144DF445482"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["58665F62B7658A51"]
+			description: ["Unlocks the &aMechanical Press&r and &aMixer&r and mechanical saw"]
+			icon: "create:mechanical_mixer"
+			id: "4937AE3C355A10E4"
+			rewards: [
+				{
+					auto: "invisible"
+					icon: "create:iron_sheet"
+					id: "39A47D69C4067C62"
+					ignore_reward_blocking: true
+					stage: "create_basic_processing"
+					tags: ["create_basic_processing"]
+					team_reward: true
+					title: "Basic Processing"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "27702D7160508092"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "basic_processing"
+					type: "historystages:history_stage"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Unlocks Mechanical Mixer and Press"
+			tasks: [
+				{
+					consume_items: true
+					count: 20L
+					id: "0B7703E47B10C487"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "1C48D640F8EF1108"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "03E788BACEAFAAC2"
+					item: { Count: 20, id: "minecraft:copper_ingot" }
+					type: "item"
+				}
+			]
+			title: "Item Processing (1)"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6D7393312B01F6AB"]
+			description: ["Unlocks &aShafts, Small and large cogwheels and Gearboxes and Hand Crank"]
+			icon: "create:shaft"
+			id: "58665F62B7658A51"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "33831F3C377A89EE"
+					ignore_reward_blocking: true
+					stage: "logistics_1"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "779A9AEE440766EC"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "logistics_1"
+					type: "historystages:history_stage"
+				}
+				{
+					auto: "invisible"
+					id: "5D9C0E0404B01267"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "vertical_gearbox"
+					type: "historystages:history_stage"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Unlock ways to transport Stress Units"
+			tasks: [
+				{
+					count: 5L
+					id: "76ADF7873EA1AD65"
+					item: "create:andesite_casing"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3E9A3D382E12C5E3"
+					item: { Count: 5, id: "create:andesite_alloy" }
+					type: "item"
+				}
+			]
+			title: "Logistics (1)"
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"Includes textures from: (link in modpack description)"
+				"Factorio Mod, licensed under the MIT License."
+				"Futureazoo’s Texture Repository. The link to the repository is provided in the modpack description."
+				""
+				"{@pagebreak}"
+				"https://github.com/malcolmriley/unused-textures/blob/master/items/material_blob_resin_1.png"
+				""
+				"malcolmriley's unused textures"
+				"craft's and additions licensed under the MIT License."
+				"Create More Mechanisms"
+			]
+			id: "7EDB7C9DFCF4F2A7"
+			size: 3.0d
+			tasks: [{
+				id: "0CF3C41808BCA177"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			title: "Credits"
+			x: -19.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6859618C9827881F"]
+			description: ["Unlocks the &cRed Research Flask&r. Used to research more advanced technologies."]
+			hide_details_until_startable: false
+			icon: "kubejs:red_research_flask"
+			id: "3299F53C8E16565E"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "58D58C58A553CB84"
+					ignore_reward_blocking: true
+					stage: "red_flask"
+					type: "gamestage"
+				}
+				{
+					auto: "enabled"
+					icon: "createdieselgenerators:diesel_engine"
+					id: "04C73E880D12B6A3"
+					title: "Chapter 2"
+					type: "custom"
+				}
+				{
+					auto: "invisible"
+					icon: "kubejs:red_research_flask"
+					id: "21991C886CB3B306"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "red_flask"
+					team_reward: true
+					type: "historystages:history_stage"
+				}
+			]
+			shape: "gear"
+			size: 3.5d
+			subtitle: "Unlocks the Red Research Flask"
+			tasks: [
+				{
+					count: 50L
+					id: "5DCCE45787D0A0F8"
+					item: { Count: 50, id: "create:iron_sheet" }
+					type: "item"
+				}
+				{
+					count: 30L
+					id: "123343E38FB9E80C"
+					item: { Count: 30, id: "create:andesite_alloy" }
+					type: "item"
+				}
+				{
+					count: 80L
+					id: "38A68682428CAB0F"
+					item: { Count: 80, id: "create:cogwheel" }
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "336573A0CF51D418"
+					item: { Count: 5, id: "create_new_age:generator_coil" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "5CFE802B5BE4076D"
+					item: { Count: 20, id: "create_new_age:copper_wire" }
+					type: "item"
+				}
+			]
+			title: "Red Research Flask"
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["58665F62B7658A51"]
+			description: ["Unlocks &aWindmills,&r, a way of generating Stress Units."]
+			icon: "create:windmill_bearing"
+			id: "675883AA937E6E62"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "10EBE40B90F3E8F3"
+					ignore_reward_blocking: true
+					stage: "create_power_2"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "6F8A71C195852254"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "power_2"
+					type: "historystages:history_stage"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Unlocks Windmills"
+			tasks: [
+				{
+					count: 10L
+					id: "6AD22DE8D357D965"
+					item: { Count: 10, id: "create:white_sail" }
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "3F2A2403F2C09DED"
+					item: { Count: 20, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+			]
+			title: "Windmills"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4937AE3C355A10E4"]
+			description: ["Unlocks very basic &aelectricity.&r"]
+			icon: "create_new_age:copper_wire"
+			id: "6859618C9827881F"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "0E1550D2ED572295"
+					ignore_reward_blocking: true
+					stage: "electricity_1"
+					type: "gamestage"
+				}
+				{
+					auto: "invisible"
+					id: "4F1FD09E9819350C"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "electricity_1"
+					type: "historystages:history_stage"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Unlock basic Electricity"
+			tasks: [
+				{
+					count: 50L
+					id: "1A6669D83114EB91"
+					item: "create:copper_sheet"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "62739618239794AC"
+					item: "create_new_age:magnetite_block"
+					type: "item"
+				}
+			]
+			title: "Electricity (1)"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3299F53C8E16565E"]
+			description: ["Tutorial Complete."]
+			icon: "createdieselgenerators:crude_oil_bucket"
+			id: "031496307FF3FCD4"
+			rewards: [{
+				description: ""
+				icon: "createdieselgenerators:crude_oil_bucket"
+				id: "7174ACD6D9857D27"
+				title: "Chapter 2 unlocked!"
+				type: "toast"
+			}]
+			shape: "diamond"
+			size: 5.0d
+			tasks: [{
+				id: "08855C1BAEAE04CA"
+				item: "kubejs:red_research_flask"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4937AE3C355A10E4"]
+			description: ["unlocks pipes, pumps and fluid tanks."]
+			icon: "create:fluid_tank"
+			id: "7B24C1322B136427"
+			rewards: [{
+				id: "09D453598DBC049C"
+				ignore_reward_blocking: true
+				individual: false
+				remove: false
+				stage: "fluid_handling"
+				type: "historystages:history_stage"
+			}]
+			shape: "gear"
+			size: 3.0d
+			tasks: [
+				{
+					count: 25L
+					id: "0635174594AA5A50"
+					item: { Count: 50, id: "create:copper_sheet" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "533C191B091CC752"
+					item: { Count: 10, id: "create:andesite_alloy" }
+					type: "item"
+				}
+			]
+			title: "Fluid Handling (1)"
+			x: 3.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["58665F62B7658A51"]
+			icon: "create:large_water_wheel"
+			id: "261BBF33780D7E8B"
+			rewards: [
+				{
+					auto: "invisible"
+					id: "22B4CDB19648E1C8"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "power_1"
+					type: "historystages:history_stage"
+				}
+				{
+					count: 3
+					id: "3EF5330B2C737E56"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			tasks: [
+				{
+					count: 3L
+					id: "356678E950D8D577"
+					item: {
+						Count: 3
+						id: "minecraft:water_bucket"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "67EA861425CD818D"
+					item: { Count: 5, id: "create:andesite_casing" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "194A4DE4AA00B89C"
+					item: { Count: 10, id: "create:cogwheel" }
+					type: "item"
+				}
+			]
+			title: "Water Wheels"
+			x: -3.0d
+			y: -7.5d
+		}
+		{
+			description: [
+				"Unlocks Wooden Tools."
+				"Click on the log icon while having a Log in your inventory and click submit."
+			]
+			id: "6D7393312B01F6AB"
+			rewards: [{
+				auto: "invisible"
+				icon: {
+					Count: 1
+					id: "minecraft:wooden_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "7CABEB71D8283243"
+				ignore_reward_blocking: true
+				individual: false
+				remove: false
+				stage: "wooden_tools"
+				type: "historystages:history_stage"
+			}]
+			shape: "diamond"
+			size: 6.0d
+			tasks: [{
+				id: "1E931028CC92D3FF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:logs)"
+					}
+				}
+				title: "Any Log"
+				type: "item"
+			}]
+			title: "Wooden Tools"
+			x: -11.5d
+			y: -4.0d
+		}
+	]
+	title: "Chapter 1"
+}

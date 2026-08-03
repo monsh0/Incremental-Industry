@@ -1,0 +1,13 @@
+name = "EfficientHashing"
+filename = "efficient_hashing-forge-1.0.0+1.20.1-mod.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d5f4a65f833390c4357c991069b82e5e6077a25a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7271537
+project-id = 1393802

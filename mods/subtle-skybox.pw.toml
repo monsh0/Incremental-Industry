@@ -1,0 +1,13 @@
+name = "Subtle Skybox"
+filename = "subtleskybox-forge-0.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6a4eaeccbebd75794e48797e3d73f8bdf5b1332f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6980613
+project-id = 1344151

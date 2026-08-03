@@ -1,0 +1,13 @@
+name = "KubeJS Create Automation"
+filename = "kjscauto-0.8.0-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b54c8aa6876121bfd57700f8f2100eb01e9f517a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8203003
+project-id = 1437313

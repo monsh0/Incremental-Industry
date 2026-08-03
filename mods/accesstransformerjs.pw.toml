@@ -1,0 +1,16 @@
+name = "AccessTransformerJS"
+filename = "AccessTransformerJS-2001.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b12b46a518340ed03adf6e17b6590eeb3dbf519d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6306450
+project-id = 1173565
+
+[option]
+optional = true

@@ -1,0 +1,13 @@
+name = "Icons - Menus"
+filename = "Icons - Menus v.1.1.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4f1162ed5734f58accd4768aae975b35a86a16f8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7412043
+project-id = 1380494

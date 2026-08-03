@@ -1,0 +1,16 @@
+name = "Simple Metals: Platinum"
+filename = "simplemetals-platinum-2.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c2dd3b633a17bae8a9489970b80cd97eb1a72c3d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5512312
+project-id = 947076
+
+[option]
+optional = true

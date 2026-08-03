@@ -1,0 +1,13 @@
+name = "Chat +"
+filename = "Chat+ v.1.3.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a178d2b2526d23de44830f58b513d3ab079f2496"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7409849
+project-id = 813470

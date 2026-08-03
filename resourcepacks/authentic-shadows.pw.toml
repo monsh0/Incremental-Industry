@@ -1,0 +1,13 @@
+name = "Authentic Shadows"
+filename = "Authentic Shadows_1.21+.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "25d7c55757b3bb3e7df2caea42089725cd4d346c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6052198
+project-id = 391858

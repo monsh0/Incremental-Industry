@@ -1,0 +1,13 @@
+name = "Global Server Configs"
+filename = "global-server-config-forge-1.18.2+-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1e1f0284d44dda59caa65ba8d775f67fcd5bf304"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5199671
+project-id = 990177

@@ -1,0 +1,13 @@
+name = "Create Tweaks & Compats"
+filename = "Create Tweaks Compats.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a52384c905017e4ba35a3cfa315a0876f5c3ee4c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5837384
+project-id = 492890

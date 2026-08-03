@@ -1,0 +1,29 @@
+{
+	menuAlert: true,
+	chatAlert: false,
+	chatMessage: "There is an update available for your modpack!",
+	platform: "MODRINTH",
+	modpackName: "Incremental Industry",
+	modpackId: "my-modpack",
+	modpackHome: "https://github.com/monsh0/Incremental-Industry",
+	localVersion: "0.0.2",
+	checkMcVersion: false,
+	loader: "forge",
+	versionAPI: "https://raw.githubusercontent.com/me/My-Modpack/main/Packwiz/pack.toml",
+	changelogLink: "https://raw.githubusercontent.com/me/My-Modpack/main/CHANGELOG.md",
+	versionType: [
+		"release",
+		"beta",
+		"alpha"
+	],
+	nameFilters: [],
+	versionFilters: [],
+	chatWelcome: true,
+	chatWelcomeMessage: "Welcome to <modpack-name>! Open the quest book by pressing Y",
+	customIcon: false,
+	customTitle: true,
+	title: "<modpack-name> <version>",
+	ramMenuAlert: true,
+	ramChatAlert: true,
+	minRam: 6000
+}
