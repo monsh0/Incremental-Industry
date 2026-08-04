@@ -1,6 +1,5 @@
 # Incremental Industry
 
-[Your modpack description here]
 
 ## Credits & Licenses
 
