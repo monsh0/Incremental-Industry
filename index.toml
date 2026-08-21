@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = ".github/workflows/build.yml"
-hash = "a719341f6b94d7521950dae43be22cc5e14f3b348957c10bf4d4e3ba7afab1b9"
+hash = "b244af9fe332f75a9a45747822ab688d9a49734afaf3e50ecf410c909b890cb1"
 
 [[files]]
 file = "CHANGELOG.MD"
@@ -2001,10 +2001,6 @@ file = "mods/Controlling-forge-1.20.1-12.0.2.jar"
 hash = "cff8c3426a77f9e7412262b6d79e423979eff3831e010b3b1ea9677e1ecd74cd"
 
 [[files]]
-file = "mods/EBE-1.20-1.20.1-0.9.1B.jar"
-hash = "47017b5a27eef8d3ab3f94e7dbb31f51cda71a052e6b9160966b7e7376920e7b"
-
-[[files]]
 file = "mods/FTBChecker-1.0.0.jar"
 hash = "738e3f0dd31bbadef157a232684cd5404556ea35fff964561bff0a6b031f42d0"
 
@@ -2420,6 +2416,11 @@ hash = "023fda002da9bd42bb7fc42a44cfaa9ce4c73d47c0289ba531bddb0c8e69b5fd"
 metafile = true
 
 [[files]]
+file = "mods/enhanced-block-entities-fork-ebe.pw.toml"
+hash = "1a0dfd00d52718eec40bd10d4d50ccb8a2afdeca62c7cd3f18a7d13006399906"
+metafile = true
+
+[[files]]
 file = "mods/entity-model-features.pw.toml"
 hash = "5a8b971146de3aa8dc7e4b862a12c69e787189ca8252db119253efdcc99220fe"
 metafile = true
@@ -2780,10 +2781,6 @@ hash = "3bf206a3cafc8257a0e9c06989c63590bc969df6aaa3ac6031695bffdcc9445e"
 metafile = true
 
 [[files]]
-file = "mods/memoryleakfix-forge-1.17+-1.1.5.jar"
-hash = "925c3db4e1d085a43c4d2beaa4eec18367c22abc90c2ce8594b8a129fd3f28dd"
-
-[[files]]
 file = "mods/midnightlib.pw.toml"
 hash = "893b3e91c2165e5b3d7950ad543d6898bd3d50b7bfa411352ab0c60447c9e8e3"
 metafile = true
@@ -2824,8 +2821,9 @@ hash = "8e3e43ae50e13d2ca69e0102fe09d007a15f59b77db252a842813c0db6d4927c"
 metafile = true
 
 [[files]]
-file = "mods/modernfix-forge-5.27.77+mc1.20.1.jar"
-hash = "d4be9281c569eb761a5764a27c7733e6cb6a34adaff5392b711edf09bba32636"
+file = "mods/modernfix.pw.toml"
+hash = "c7ffa2d9d6ffe6cc471e293baece3e8543ee3cadd7acf2c0c2c9bef0dc876a56"
+metafile = true
 
 [[files]]
 file = "mods/more-create-burners.pw.toml"
@@ -2948,6 +2946,11 @@ metafile = true
 [[files]]
 file = "mods/probejs-legacy.pw.toml"
 hash = "dda12b710da896de739477eba58a6f18f0632c9fc31ae9f3b515e8a8ad4d8d84"
+metafile = true
+
+[[files]]
+file = "mods/project-1029454.pw.toml"
+hash = "b4b74b7292223d98fe08a1cdb74f716472476150ab7b284bf143a5f7cfc0f9dc"
 metafile = true
 
 [[files]]
