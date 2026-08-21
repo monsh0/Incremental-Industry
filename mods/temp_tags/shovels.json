@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "create_ironworks:brass_shovel",
+    "create_ironworks:copper_shovel",
+    "create_ironworks:steel_shovel",
+    "create_ironworks:bronze_shovel"
+  ]
+}

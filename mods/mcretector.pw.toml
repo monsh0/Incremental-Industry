@@ -1,0 +1,13 @@
+name = "MCretector"
+filename = "MCretector-1.1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5718e2c29e2be79eeb553655742ac4d123ebbd36"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6831141
+project-id = 899452

@@ -1,0 +1,15 @@
+#Check for FTB Chunks
+chunks = true
+#Check for FTB Library
+base = true
+#Check for FTB Quests
+quests = true
+#Check for FTB Teams
+teams = false
+
+[customMods]
+	#Additional mods to check for, one entry per mod, in the format:
+	#"modId|Display Name|Download URL"
+	#Example: "jei|Just Enough Items|https://www.curseforge.com/minecraft/mc-mods/jei"
+	mods = []
+

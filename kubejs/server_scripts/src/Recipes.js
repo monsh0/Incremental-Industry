@@ -397,7 +397,6 @@ ServerEvents.recipes(event => {
     }
   )
     .id('kubejs:crafting/vertical_gearbox')
-    .stage('vertical_gearbox')
   event.remove({ output: 'farmersdelight:cooking_pot' })
   event.shaped(
     Item.of('farmersdelight:cooking_pot'),
@@ -445,7 +444,6 @@ ServerEvents.recipes(event => {
     }
   )
     .id('kubejs:crafting/gearbox_from_vertical_gearbox')
-    .stage('vertical_gearbox')
   event.remove({ output: 'create:windmill_bearing' })
   event.shaped(
     Item.of('create:windmill_bearing'),
@@ -563,8 +561,7 @@ ServerEvents.recipes(event => {
       P: '#minecraft:planks'
     }
   )
-    .id('kubejs:crafting/copper_wire')
-    .stage('electricity_1')
+
 
   event.remove({ output: 'create:fluid_pipe' })
   event.shaped(
@@ -842,13 +839,15 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing(
       [
           Item.of('create_ironworks:steel_ingot'),
-          '2x minecraft:iron_nugget',
+          'minecraft:iron_nugget',
           Item.of('create_ironworks:steel_nugget')
       ],
       [
           'minecraft:iron_ingot',
-          '6x minecraft:iron_nugget',
-          '3x create_ironworks:coal_dust'
+          '7x minecraft:iron_nugget',
+          '3x create_ironworks:coal_dust',
+          'minecraft:coal'
+
       ]
   ).superheated().id('kubejs:mixing/steel_from_coal')
   event.recipes.create.mixing(
@@ -861,8 +860,8 @@ ServerEvents.recipes(event => {
       ]
   ).superheated().id('kubejs:mixing/steel_from_charcoal')
 
-  event.recipes.create.mixing(['kubejs:raw_plastic'], [Fluid.of('createdieselgenerators:plant_oil', 250), Fluid.of('kubejs:slaked_lime', 250), Fluid.of('createdieselgenerators:ethanol', 250),  ]).id('kubejs:mixing/raw_plastic').heated()
-  event.recipes.create.mixing(['kubejs:raw_plastic'], [Fluid.of('createdieselgenerators:crude_oil', 250), Fluid.of('kubejs:slaked_lime', 100), Fluid.of('createdieselgenerators:ethanol', 250),  ]).id('kubejs:mixing/raw_plastic_from_crude_oil').heated()
+  event.recipes.create.mixing(['kubejs:raw_plastic'], [Fluid.of('createdieselgenerators:plant_oil', 300), Fluid.of('kubejs:slaked_lime', 300), Fluid.of('createdieselgenerators:ethanol', 300),  ]).id('kubejs:mixing/raw_plastic').heated()
+  event.recipes.create.mixing(['kubejs:raw_plastic'], [Fluid.of('kubejs:naphtha', 150), Fluid.of('kubejs:slaked_lime', 100) ]).id('kubejs:mixing/raw_plastic_from_naphtha').heated()
 
   event.recipes.create.mixing(['create:veridium'], [Item.of('minecraft:cobbled_deepslate'), Item.of('minecraft:prismarine')  ]).id('kubejs:mixing/veridium')
   event.recipes.create.mixing(['farmersdelight:wheat_dough', Item.of('farmersdelight:wheat_dough').withChance(0.75)], [Item.of('create:wheat_flour'), Fluid.of('minecraft:water', 250)]).id('kubejs:mixing/dough')
@@ -1087,6 +1086,7 @@ ServerEvents.recipes(event => {
   // crushing
 
   event.recipes.create.crushing(['2x minecraft:nether_wart', Item.of('2x minecraft:nether_wart').withChance(0.5)], 'minecraft:crimson_nylium')
+  event.recipes.create.crushing([Item.of('minecraft:iron_nugget').withChance(0.75), Item.of('minecraft:iron_nugget').withChance(0.25)], 'minecraft:andesite')
 
 
   // misc
@@ -1381,6 +1381,8 @@ ServerEvents.recipes(event => {
 
   // milling
   event.recipes.create.milling([Item.of('minecraft:leather').withChance(0.25)], 'minecraft:rotten_flesh')
+  event.recipes.create.milling([Item.of('minecraft:iron_nugget').withChance(0.75), Item.of('minecraft:iron_nugget').withChance(0.25)], 'minecraft:andesite')
+  event.recipes.create.milling([Item.of('minecraft:green_dye').withChance(0.25)], 'minecraft:oak_leaves')
 
   // filling
 })

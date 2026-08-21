@@ -1,0 +1,57 @@
+{
+	icon: "minecraft:trapped_chest"
+	id: "254FF51367FF0047"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "minecraft:wooden_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:wooden_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:wooden_shovel"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "minecraft:wooden_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ count: 15, item: "minecraft:andesite" }
+		{ count: 10, item: "minecraft:cobblestone" }
+		{ item: "farmersdelight:hamburger" }
+	]
+	title: "Starting Items"
+}

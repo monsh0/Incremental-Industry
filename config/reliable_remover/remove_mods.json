@@ -1,0 +1,14 @@
+[
+    {
+        "action": "remove",
+        "mod": "quark"
+    },
+    {
+        "action": "remove",
+        "mod": "create_better_motors"
+    },
+    {
+        "action": "remove",
+        "mod": "estrogen"
+    }
+]

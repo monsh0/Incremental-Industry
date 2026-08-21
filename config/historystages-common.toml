@@ -64,6 +64,21 @@
 	researchBoosters = []
 	#Lock the scroll in the pedestal once research has started? Prevents players (and hoppers) from removing the scroll until research completes or the pedestal is broken. [Default: false]
 	lockScrollWhileResearching = false
+	#What happens to a research scroll when its research finishes.
+	#  consume: the scroll is used up (behaviour before this option existed).
+	#  replace: a fresh scroll for the same stage is placed back into the pedestal,
+	#           so the next player can research it without needing a second copy.
+	#  open:    an open scroll is placed into the pedestal as a keepsake. No refill.
+	#A single stage can override this with its own 'scroll_completion'. [Default: consume]
+	defaultScrollCompletion = "consume"
+	#Allow crafting a sealed scroll back out of an open one?
+	#The open scroll acts as a template and is not consumed; one sheet of
+	#paper is. Turn this off for a pack where a finished stage's scroll is
+	#meant to stay a one-off.
+	#Crafting follows this immediately. JEI and EMI build their recipe lists
+	#once at startup, so the entry only appears or disappears there after a
+	#restart. [Default: true]
+	enableScrollResealing = true
 
 #Settings for replacing locked loot with alternatives
 [loot_replacements]
@@ -101,6 +116,8 @@
 	useSounds = true
 	#Show an advancement-style toast popup when an individual stage is unlocked? [Default: true]
 	useToasts = true
+	#Handle items locked by individual stages in Lootr containers and mob loot? Lootr containers are checked against the player opening them; mob drops are shared world items, so they are checked against the killing player. [Default: true]
+	lockLoot = true
 
 #Structure Lock Settings (locks player entry into specified structures)
 [structure_lock]
@@ -159,4 +176,96 @@
 	entityItemLocked = ""
 	#Actionbar message when applying a locked enchantment. Lang key: message.historystages.enchantment_locked
 	enchantmentLocked = ""
+
+#The document an Open Scroll shows when right-clicked.
+#Chapters are drawn in the order they appear below.
+#Each entry is one chapter: id|enabled|mode
+#  id   overview, items, creatures, world
+#  mode icons or text; overview and world are always text
+#Unknown ids are ignored and missing ones fall back to their default,
+#so an update can add chapters safely.
+[open_scroll]
+	#The chapters, in tab order.
+	chapters = ["overview|true|text", "items|true|icons", "creatures|true|icons", "world|true|text"]
+	#What a reader sees for a stage they have not unlocked.
+	#visible  = everything readable, the scroll is just a record
+	#obscured = locked entries as silhouettes, names in enchanting glyphs
+	#[Default: obscured]
+	lockedDisplay = "obscured"
+	#The overview page's blocks, in reading order.
+	#Each entry is one block: id|enabled
+	#  id  icon, title, description, counts
+	#Blocks flow from the top of the page, so a short description no
+	#longer leaves a gap above the counts line.
+	overviewBlocks = ["icon|true", "title|true", "description|true", "counts|true"]
+	#Draw the search line? Off gives the content 12 more pixels.
+	#[Default: true]
+	showSearch = true
+	#Show the raw registry id in an entry's tooltip?
+	#Off keeps a story pack free of minecraft:iron_ingot. [Default: true]
+	showEntryIds = true
+	#In which order a chapter lists its entries.
+	#defined      = the order the stage file lists them in
+	#alphabetical = by display name
+	#[Default: defined]
+	entrySort = "defined"
+	#Ink for the chapter words and the stage title. [Default: #3F2D13]
+	inkHeading = "#3F2D13"
+	#Ink for entries and the description. [Default: #4A3416]
+	inkBody = "#4A3416"
+	#Ink for group headings, the counts line and the sheet counter.
+	#[Default: #7A5A2C]
+	inkFaint = "#7A5A2C"
+
+#Biome Lock Settings (punishes players standing in a biome they haven't unlocked yet)
+[biome_lock]
+	#How often (in ticks) to re-check a player's biome even when they haven't moved to a new biome cell. Moving always re-checks immediately. [Default: 10]
+	#Range: 1 ~ 200
+	checkInterval = 10
+	#Apply the potion effects listed below while the player is inside a locked biome? [Default: true]
+	effectsEnabled = true
+	#Potion effects applied while the player stands in a locked biome.
+	#Format per entry: "effect_id, seconds, amplifier"
+	#  seconds:   how long the effect lasts. It is refreshed while the player stays inside,
+	#             so this is really 'how long it lingers after leaving' (1-3600).
+	#  amplifier: 0 = level I, 1 = level II, ... (0-255).
+	#Unknown effect ids are logged once and skipped.
+	effects = ["minecraft:blindness, 30, 0"]
+	#Remove those effects the moment the player leaves the locked biome, instead of letting them run out? [Default: false]
+	clearEffectsOnLeave = false
+	#Show the player a message while they are inside a locked biome? [Default: true]
+	messageEnabled = true
+	#Message format for biome lock. Use {biome} for the biome ID, {stage} for the required stage, and & for colors.
+	messageFormat = "&cYou cannot survive in &e{biome}&c yet!"
+	#Show the biome lock message in chat as well (otherwise only actionbar)? [Default: false]
+	showInChat = false
+	#Damage the player while they are inside a locked biome? [Default: true]
+	damageEnabled = true
+	#Amount of damage dealt per damage tick. [Default: 1.0]
+	#Range: 0.1 ~ 100.0
+	damageAmount = 1.0
+	#How often (in ticks) to deal damage while inside a locked biome. [Default: 20]
+	#Range: 1 ~ 600
+	damageInterval = 20
+	#Cancel ALL right-click interactions (blocks, items, entities) while the player is inside a locked biome? [Default: true]
+	blockRightClick = true
+	#Cancel ALL left-click interactions (attacking entities, breaking blocks) while the player is inside a locked biome? [Default: true]
+	blockLeftClick = true
+	#Cancel projectiles (arrows, snowballs, ender pearls, etc.) the moment they would impact inside a locked biome? [Default: true]
+	blockProjectiles = true
+
+#Layout of the Research Scroll tooltip.
+#Each entry is one line: id|enabled|spacerBefore|style|text
+#  text  empty = use the built-in translation
+#  style empty = use the line's built-in colour;
+#        otherwise ChatFormatting names joined with '+', e.g. gray+italic
+#The order of the movable ids (individual_badge, owner, info1, info2, tier,
+#dependencies) is the order they render in. Unknown ids are ignored, missing
+#ones fall back to their default, so an update can add lines safely.
+#Easiest way to edit this is the in-game config editor.
+[scroll_tooltip]
+	#The tooltip lines, in render order.
+	lines = ["name|true|false|aqua|", "individual_badge|true|false|light_purple|", "owner|true|false|gray|", "info1|true|false|gray+italic|", "info2|true|false|gray+italic|", "tier|true|false|gray|", "dependencies|true|true||", "dep.header|true|false|gold|", "dep.item|true|false||", "dep.stage|true|false||", "dep.individual|true|false||", "dep.xp|true|false||", "dep.separator|true|false|dark_gray|", "dep.icon_fulfilled|true|false||✔", "dep.icon_open|true|false||✘", "dep.icon_unknown|true|false||•", "dep.color_fulfilled|true|false||green", "dep.color_open|true|false||gray"]
+	#Hide already fulfilled dependencies in scroll tooltips? [Default: false]
+	hideFulfilledDependencies = false
 

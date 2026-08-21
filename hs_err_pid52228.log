@@ -1,0 +1,96 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007f8a4a0104ac, pid=52228, tid=52355
+#
+# JRE version: OpenJDK Runtime Environment Temurin-21.0.12+8 (21.0.12+8) (build 21.0.12+8-LTS)
+# Java VM: OpenJDK 64-Bit Server VM Temurin-21.0.12+8 (21.0.12+8-LTS, mixed mode, sharing, tiered, compressed class ptrs, z gc, linux-amd64)
+# Problematic frame:
+# C  0x000000006a84ca14
+#
+# Core dump will be written. Default location: Determined by the following: "/usr/lib/systemd/systemd-coredump %P %u %g %s %t %c %h %d %F %I" (alternatively, falling back to /mnt/extra/FreesmLauncher/instances/Incremental Industries/minecraft/core.52228)
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/adoptium/adoptium-support/issues
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Duser.language=en -XX:+UseZGC -Dforge.logging.mojang.level=DEBUG -Xms512m -Xmx8064m -Djava.library.path=/mnt/extra/FreesmLauncher/instances/Incremental Industries/natives org.prismlauncher.EntryPoint
+
+Host: Intel(R) Xeon(R) CPU E3-1505M v5 @ 2.80GHz, 8 cores, 15G, Arch Linux
+Time: Wed Aug 19 00:39:40 2026 +0330 elapsed time: 4040.784397 seconds (0d 1h 7m 20s)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x00007f89f4200000,0x00007f89f4a00000],  sp=0x00007f89f49fed68,  free space=8187k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  0x000000006a84ca14
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x00007f8a4a0104ac
+
+Registers:
+RAX=0x000000000000006e, RBX=0x00007f8c50b56ed0, RCX=0x000000000000cc83, RDX=0x0000000000000000
+RSP=0x00007f89f49fed60, RBP=0x0000000000000064, RSI=0x0000000000000000, RDI=0x00007f8c50b56f00
+R8 =0x0000000000000005, R9 =0x0000000000009d90, R10=0x00007f89f49fed70, R11=0x00007f89f49ff6c0
+R12=0x00007f8c50b56f00, R13=0x0000000000000000, R14=0x0000000005f5e100, R15=0x00007f8c51b41ac0
+RIP=0x00007f8a4a0104ac, EFLAGS=0x0000000000010246, CSGSFS=0x002b000000000033, ERR=0x0000000000000014
+  TRAPNO=0x000000000000000e
+
+XMM[0]=0x0000000000000000 0x0000000046d44800
+XMM[1]=0x0000000000000000 0x0000000000000000
+XMM[2]=0x0000000000000004 0x0000000000000000
+XMM[3]=0x0000000000000000 0x0000000000000006
+XMM[4]=0x0000000000000000 0x0000000000000000
+XMM[5]=0x0000000000000000 0x0000000000000000
+XMM[6]=0x0000000000000000 0x0000000000000000
+XMM[7]=0x0000000000000051 0x0000000000000000
+XMM[8]=0x0000000000000000 0x000000003f800000
+XMM[9]=0x0000000000200000 0x0000000000202020
+XMM[10]=0x3f3f3f3f3f3f3f3f 0x3f3f3f3f3f3f3f3f
+XMM[11]=0x9999999999999999 0x9999999999999999
+XMM[12]=0x2020202020202020 0x2020202020202020
+XMM[13]=0x0000000000000000 0x00000000927514a9
+XMM[14]=0x0000000000000000 0x0000000000000007
+XMM[15]=0x0000000000000000 0x0000000000000000
+  MXCSR=0x00001fa2
+
+
+Top of Stack: (sp=0x00007f89f49fed60)
+0x00007f89f49fed60:   000000006a84ca14 00000000000230e4   ...j.....0......
+0x00007f89f49fed70:   000000006a84ca14 000000000e84dba0   ...j............
+0x00007f89f49fed80:   00007f8c52462a00 00007f8a4b958ec0   .*FR.......K....
+0x00007f89f49fed90:   00007f8a4b960280 00007f8c52462e00   ...K......FR....
+0x00007f89f49feda0:   00007f8a4b925fa0 00007f8a49e152c2   ._.K.....R.I....
+0x00007f89f49fedb0:   00007f8c00000000 00017f8a4bf50cf7   ...........K....
+0x00007f89f49fedc0:   00007f8a4b925fa0 00007f8a4a00bf24   ._.K....$..J....
+0x00007f89f49fedd0:   00007f89f49fedf8 00007f8a4bf5a1e8   ...........K....
+0x00007f89f49fede0:   0000000000000001 0000000000000001   ................
+0x00007f89f49fedf0:   00007f89f49ff6c0 00007f8a4a01156f   ........o..J....
+0x00007f89f49fee00:   0000000000000000 00007f8c52462e00   ..........FR....
+0x00007f89f49fee10:   00007f8a4a0113b0 0000000000000021   ...J....!.......
+0x00007f89f49fee20:   00007f89f7ffa690 0000000000000002   ................
+0x00007f89f49fee30:   00007f89f7ffa797 00007f8a4a010664   ........d..J....
+0x00007f89f49fee40:   0000000000000002 00007f89f49ffce4   ................
+0x00007f89f49fee50:   00007f89f49fef70 00007f8c800980a2   p...............
+0x00007f89f49fee60:   0000000000000000 0000000000000000   ................
+0x00007f89f49fee70:   0000000000000000 00007f89f49ff6c0   ................
+0x00007f89f49fee80:   ffffffffffffff40 748180f3e7fd865e   @.......^......t
+0x00007f89f49fee90:   0000000000000021 00007f89f7ffa690   !...............
+0x00007f89f49feea0:   0000000000000002 00007f89f7ffa797   ................
+0x00007f89f49feeb0:   748180f3e5dd865e 748b69dec599865e   ^......t^....i.t
+0x00007f89f49feec0:   0000000000000000 0000000000000000   ................
+0x00007f89f49feed0:   0000000000000000 0000000000000000   ................
+0x00007f89f49feee0:   0000000000000000 0000000000000000   ................
+0x00007f89f49feef0:   203a6362696c6720 2064616572687470    glibc: pthread 
+0x00007f89f49fef00:   35203a6b63617473 0000000035353332   stack: 52355....
+0x00007f89f49fef10:   0000000000000000 0000000000000000   ................
+0x00007f89f49fef20:   0000000000000000 0000000000000000   ................
+0x00007f89f49fef30:   0000000000000000 0000000000000000   ................
+0x00007f89f49fef40:   0000000000000000 ea5150a3a2e60500   .............PQ.
+0x00007f89f49fef50:   0000000000000000 00007f8c80097d00   .........}......
+
+Instructions: (pc=0x000000006a84ca14)
+0x000000006a84c914:   

@@ -1,0 +1,11 @@
+================================================================
+  History Stages - Runtime Log
+  Session started: 2026-08-17 15:39:27
+  Mod Version: 5.5.1-1.20.1
+================================================================
+
+[15:38:21] [Server] Server started — cache initialized with 0 unlocked stages, 18 stages loaded
+[15:38:27] [Player Login] <Monsh0> Synced 18 stage definitions, 0 unlocked stages, 0 individual stages
+[15:39:05] [Player Login] <arash_nmd> Synced 18 stage definitions, 0 unlocked stages, 0 individual stages
+[15:41:37] [Inventory] <Monsh0> Dropped locked 'create:large_water_wheel' x1 from inventory [action: pickup]
+[15:42:16] [Server] Server stopping — flushing runtime log

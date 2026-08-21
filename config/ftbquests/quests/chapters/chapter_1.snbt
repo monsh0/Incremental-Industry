@@ -121,30 +121,6 @@
 			y: -4.0d
 		}
 		{
-			description: [
-				"Includes textures from: (link in modpack description)"
-				"Factorio Mod, licensed under the MIT License."
-				"Futureazoo’s Texture Repository. The link to the repository is provided in the modpack description."
-				""
-				"{@pagebreak}"
-				"https://github.com/malcolmriley/unused-textures/blob/master/items/material_blob_resin_1.png"
-				""
-				"malcolmriley's unused textures"
-				"craft's and additions licensed under the MIT License."
-				"Create More Mechanisms"
-			]
-			id: "7EDB7C9DFCF4F2A7"
-			size: 3.0d
-			tasks: [{
-				id: "0CF3C41808BCA177"
-				item: "minecraft:writable_book"
-				type: "item"
-			}]
-			title: "Credits"
-			x: -19.5d
-			y: -4.5d
-		}
-		{
 			dependencies: ["6859618C9827881F"]
 			description: ["Unlocks the &cRed Research Flask&r. Used to research more advanced technologies."]
 			hide_details_until_startable: false
@@ -212,7 +188,7 @@
 					type: "item"
 				}
 			]
-			title: "Red Research Flask"
+			title: "&l&cRed Research Flask"
 			x: 7.5d
 			y: -1.5d
 		}
@@ -310,6 +286,7 @@
 			icon: "createdieselgenerators:crude_oil_bucket"
 			id: "031496307FF3FCD4"
 			rewards: [{
+				auto: "enabled"
 				description: ""
 				icon: "createdieselgenerators:crude_oil_bucket"
 				id: "7174ACD6D9857D27"
@@ -323,6 +300,7 @@
 				item: "kubejs:red_research_flask"
 				type: "item"
 			}]
+			title: "&l&6Chapter 2"
 			x: 15.0d
 			y: -1.5d
 		}
@@ -413,27 +391,32 @@
 			y: -7.5d
 		}
 		{
+			dependencies: ["0219A15544648792"]
 			description: [
 				"Unlocks Wooden Tools."
 				"Click on the log icon while having a Log in your inventory and click submit."
 			]
+			hide_until_deps_complete: true
 			id: "6D7393312B01F6AB"
-			rewards: [{
-				auto: "invisible"
-				icon: {
-					Count: 1
-					id: "minecraft:wooden_sword"
-					tag: {
-						Damage: 0
-					}
+			rewards: [
+				{
+					auto: "disabled"
+					exclude_from_claim_all: true
+					icon: "minecraft:chest"
+					id: "3153FF6888B07F92"
+					table_id: 2688636966261424199L
+					title: "Starting Items"
+					type: "all_table"
 				}
-				id: "7CABEB71D8283243"
-				ignore_reward_blocking: true
-				individual: false
-				remove: false
-				stage: "wooden_tools"
-				type: "historystages:history_stage"
-			}]
+				{
+					id: "4785268D62AB835C"
+					ignore_reward_blocking: true
+					individual: false
+					remove: false
+					stage: "wooden_tools"
+					type: "historystages:history_stage"
+				}
+			]
 			shape: "diamond"
 			size: 6.0d
 			tasks: [{
@@ -453,5 +436,5 @@
 			y: -4.0d
 		}
 	]
-	title: "Chapter 1"
+	title: "&l&cC1: The Beginning"
 }

@@ -15,11 +15,11 @@ reducedDebugInfo:false
 showSubtitles:false
 directionalAudio:false
 touchscreen:false
-fullscreen:true
+fullscreen:false
 bobView:true
 toggleCrouch:false
 toggleSprint:false
-darkMojangStudiosBackground:false
+darkMojangStudiosBackground:true
 hideLightningFlashes:false
 mouseSensitivity:0.5
 fov:0.5
@@ -42,8 +42,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:3
 renderClouds:"true"
-resourcePacks:["mod_resources","vanilla","file/Better_Icons!.zip","file/Better Bed Items.zip","file/Simple Grass Flowers v1.9.6.zip","file/Vanilla Tweaks.zip","generated/fragmentum_layer","file/tooltip_white.v1+mono-frame.v1+v4.zip","file/ShadedFont.zip","file/Chat+ v.1.3.zip","file/Icons - Menus v.1.1.zip","file/Emi Defaults","builtin/create_repair_asset_overrides","fabric","continuity:default","continuity:glass_pane_culling_fix","obscure_tooltips/packs/vibrant_tooltips","create_questing","file/Unique Gear.zip","file/LowOnFire v26.2§8.zip","file/Fancy Crops v1.3.zip","mod/subtle_effects:resourcepacks/biome_color_water_particles","file/Create Immersive Aircrafts Resource Pack 1.20.1 - 3.0.zip","file/CreateSophBackpacks.zip","file/Soft-Weather-1.0-Universal.zip","file/Authentic Shadows_1.21+.zip","file/Farcr\u0027s Better Dirt V1.2.zip","file/Create Tweaks Compats.zip","file/Create Copper Tweaks.zip","file/Create Touch-Ups v1.0.zip","file/CU - 3d Wrench.zip","file/Quiet Farm 26.2+.zip"]
-incompatibleResourcePacks:["file/Better Bed Items.zip","file/tooltip_white.v1+mono-frame.v1+v4.zip","file/ShadedFont.zip","file/Chat+ v.1.3.zip","file/CreateSophBackpacks.zip","file/Soft-Weather-1.0-Universal.zip","file/Authentic Shadows_1.21+.zip","file/CU - 3d Wrench.zip","file/Quiet Farm 26.2+.zip"]
+resourcePacks:["mod_resources","vanilla","file/Better_Icons!.zip","file/Better Bed Items.zip","file/Simple Grass Flowers v1.9.6.zip","file/Vanilla Tweaks.zip","generated/fragmentum_layer","file/tooltip_white.v1+mono-frame.v1+v4.zip","file/Chat+ v.1.3.zip","file/Icons - Menus v.1.1.zip","file/Emi Defaults","builtin/create_repair_asset_overrides","fabric","continuity:default","continuity:glass_pane_culling_fix","obscure_tooltips/packs/vibrant_tooltips","create_questing","file/Unique Gear.zip","file/LowOnFire v26.2§8.zip","file/Fancy Crops v1.3.zip","mod/subtle_effects:resourcepacks/biome_color_water_particles","file/Create Immersive Aircrafts Resource Pack 1.20.1 - 3.0.zip","file/CreateSophBackpacks.zip","file/Soft-Weather-1.0-Universal.zip","file/Authentic Shadows_1.21+.zip","file/Farcr\u0027s Better Dirt V1.2.zip","file/Create Tweaks Compats.zip","file/Create Copper Tweaks.zip","file/Create Touch-Ups v1.0.zip","file/Quiet Farm 26.2+.zip","file/CU - 3d Wrench.zip","file/ShadedFont.zip","file/ftb_quests_images"]
+incompatibleResourcePacks:["file/Better Bed Items.zip","file/tooltip_white.v1+mono-frame.v1+v4.zip","file/Chat+ v.1.3.zip","file/CreateSophBackpacks.zip","file/Soft-Weather-1.0-Universal.zip","file/Authentic Shadows_1.21+.zip","file/Quiet Farm 26.2+.zip","file/CU - 3d Wrench.zip","file/ShadedFont.zip"]
 lastServer:
 lang:en_us
 soundDevice:""
@@ -72,10 +72,10 @@ tutorialStep:movement
 mouseWheelSensitivity:1.0
 rawMouseInput:true
 glDebugVerbosity:1
-skipMultiplayerWarning:false
+skipMultiplayerWarning:true
 skipRealms32bitWarning:false
 hideMatchedNames:true
-joinedFirstServer:false
+joinedFirstServer:true
 hideBundleTutorial:false
 syncChunkWrites:true
 showAutosaveIndicator:true
@@ -153,6 +153,7 @@ key_gui.xaero_alternative_list_players:key.keyboard.unknown
 key_gui.xaero_toggle_tracked_players_on_map:key.keyboard.unknown
 key_gui.xaero_toggle_tracked_players_in_world:key.keyboard.unknown
 key_gui.xaero_toggle_pac_chunk_claims:key.keyboard.unknown
+key_key.reliable_remover.emi_delete:key.keyboard.delete
 key_great-scrollable-tooltips.key-binding.scroll-up:key.keyboard.up
 key_great-scrollable-tooltips.key-binding.scroll-left:key.keyboard.left
 key_great-scrollable-tooltips.key-binding.scroll-down:key.keyboard.down
@@ -178,14 +179,16 @@ key_gui.xaero_map_zoom_in:key.keyboard.unknown
 key_gui.xaero_map_zoom_out:key.keyboard.unknown
 key_gui.xaero_quick_confirm:key.keyboard.right.shift
 key_gui.xaero_toggle_dimension:key.keyboard.unknown
+key_placebo.toggleTrails:key.keyboard.keypad.9
+key_placebo.toggleWings:key.keyboard.keypad.8
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.unknown
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_railways.keyinfo.bogey_menu:key.keyboard.left.alt
 key_railways.keyinfo.cycle_menu:key.keyboard.left.alt
 key_fpsreducer.key.openGui:key.keyboard.end

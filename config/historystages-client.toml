@@ -26,6 +26,10 @@
 	#Opacity of the red lock-overlay (0.0 = invisible, 1.0 = fully opaque). [Default: 0.30]
 	#Range: 0.0 ~ 1.0
 	structureLockOverlayOpacity = 0.3
+	#How far the world behind an open scroll is dimmed, in percent.
+	#0 = not at all, 100 = black. [Default: 60]
+	#Range: 0 ~ 100
+	openScrollBackdrop = 60
 
 #Settings for Jade block overlay (requires Jade mod)
 [jade]
@@ -60,13 +64,6 @@
 	showSilverLockIcons = true
 	#Show tooltip information for items locked by individual stages? [Default: true]
 	showIndividualTooltips = true
-
-#Dependency Display Settings
-[dependencies]
-	#Show dependency requirements in research scroll tooltips? [Default: true]
-	showDependenciesOnScroll = true
-	#Hide already fulfilled dependencies in scroll tooltips? [Default: false]
-	hideFulfilledDependencies = false
 
 #JEI hiding (Issue #64) — opt-in toggle for fully hiding locked items/recipes in JEI.
 [jei_hiding]

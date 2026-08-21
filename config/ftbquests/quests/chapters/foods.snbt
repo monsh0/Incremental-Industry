@@ -8,7 +8,9 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["0C8E6AF13F48BF3F"]
 			description: ["Get 1 of each soup"]
+			hide_until_deps_complete: true
 			hide_until_deps_visible: false
 			id: "0768C42E66A7D701"
 			shape: "rsquare"
@@ -98,16 +100,17 @@
 			y: 4.0d
 		}
 		{
-			id: "555387EB1776C082"
-			shape: "diamond"
-			size: 4.0d
+			hide_until_deps_complete: true
+			hide_until_deps_visible: true
+			id: "0C8E6AF13F48BF3F"
+			invisible: true
 			tasks: [{
-				id: "5CDBDEA662FBD0A9"
-				max_input: 1000L
-				type: "forge_energy"
-				value: 1000000L
+				id: "26FB0D06311434BC"
+				item: "ftbquests:barrier"
+				type: "item"
 			}]
-			x: -4.0d
+			title: "Experimental"
+			x: 6.0d
 			y: -1.0d
 		}
 	]

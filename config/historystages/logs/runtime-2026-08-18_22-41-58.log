@@ -1,0 +1,45 @@
+================================================================
+  History Stages - Runtime Log
+  Session started: 2026-08-18 22:42:34
+  Mod Version: 5.5.1-1.20.1
+================================================================
+
+[22:41:58] [Server] Server started — cache initialized with 17 unlocked stages, 18 stages loaded
+[22:42:02] [Player Login] <Monsh0> Synced 18 stage definitions, 17 unlocked stages, 0 individual stages
+[22:52:08] [Inventory] <Monsh0> Dropped locked 'minecraft:wooden_sword' x1 from inventory [action: pickup]
+[22:52:08] [Inventory] <Monsh0> Dropped locked 'minecraft:wooden_pickaxe' x1 from inventory [action: pickup]
+[22:52:08] [Inventory] <Monsh0> Dropped locked 'minecraft:wooden_axe' x1 from inventory [action: pickup]
+[22:52:08] [Inventory] <Monsh0> Dropped locked 'minecraft:wooden_shovel' x1 from inventory [action: pickup]
+[22:52:08] [Inventory] <Monsh0> Dropped locked 'minecraft:wooden_hoe' x1 from inventory [action: pickup]
+[22:52:17] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_sword' blocked [action: pickup]
+[22:52:17] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_shovel' blocked [action: pickup]
+[22:52:17] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_axe' blocked [action: pickup]
+[22:52:17] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_hoe' blocked [action: pickup]
+[22:52:17] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_pickaxe' blocked [action: pickup]
+[22:52:22] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_sword' blocked [action: pickup]
+[22:52:22] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_axe' blocked [action: pickup]
+[22:52:22] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_shovel' blocked [action: pickup]
+[22:52:22] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_hoe' blocked [action: pickup]
+[22:52:22] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_pickaxe' blocked [action: pickup]
+[22:52:27] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_sword' blocked [action: pickup]
+[22:52:27] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_axe' blocked [action: pickup]
+[22:52:27] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_shovel' blocked [action: pickup]
+[22:52:27] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_hoe' blocked [action: pickup]
+[22:52:27] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_pickaxe' blocked [action: pickup]
+[22:52:32] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_sword' blocked [action: pickup]
+[22:52:32] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_axe' blocked [action: pickup]
+[22:52:32] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_shovel' blocked [action: pickup]
+[22:52:32] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_hoe' blocked [action: pickup]
+[22:52:32] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_pickaxe' blocked [action: pickup]
+[22:52:37] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_sword' blocked [action: pickup]
+[22:52:37] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_axe' blocked [action: pickup]
+[22:52:37] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_shovel' blocked [action: pickup]
+[22:52:37] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_hoe' blocked [action: pickup]
+[22:52:37] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_pickaxe' blocked [action: pickup]
+[22:52:42] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_sword' blocked [action: pickup]
+[22:52:42] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_pickaxe' blocked [action: pickup]
+[22:52:42] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_axe' blocked [action: pickup]
+[22:52:42] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_shovel' blocked [action: pickup]
+[22:52:42] [Inventory] <Monsh0> Pickup of 'minecraft:wooden_hoe' blocked [action: pickup]
+[22:52:44] [Reload] <Server> Reloaded stage configurations (18 stages)
+[23:31:01] [Server] Server stopping — flushing runtime log

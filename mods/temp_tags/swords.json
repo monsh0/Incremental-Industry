@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "create_ironworks:brass_sword",
+    "create_ironworks:copper_sword",
+    "create_ironworks:steel_sword",
+    "create_ironworks:bronze_sword"
+  ]
+}

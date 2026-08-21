@@ -6,6 +6,45 @@
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_complete: true
 	id: "3E2BB2BD80C28202"
+	images: [
+		{
+			dependency: "7633AA8AC590F6E1"
+			height: 1.0d
+			image: "minecraft:block/lava_still"
+			rotation: 0.0d
+			width: 1.0d
+			x: -8.5d
+			y: -7.0d
+		}
+		{
+			color: 1600511
+			dependency: "7633AA8AC590F6E1"
+			height: 1.0d
+			image: "minecraft:block/water_still"
+			rotation: 0.0d
+			width: 1.0d
+			x: -6.800000000000001d
+			y: -7.0d
+		}
+		{
+			dependency: "7633AA8AC590F6E1"
+			height: 1.0d
+			image: "minecraft:block/andesite"
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.65d
+			y: -7.0d
+		}
+		{
+			dependency: "7633AA8AC590F6E1"
+			height: 1.0d
+			image: "minecraft:block/magma"
+			rotation: 0.0d
+			width: 1.0d
+			x: -7.65d
+			y: -6.15d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -35,24 +74,9 @@
 			y: -4.5d
 		}
 		{
-			description: [
-				"Transfers rotational power between shafts. can be used to change direction or transfer Stress Units vertically."
-				"Costs small amount of Stress Units"
-			]
-			id: "724212DE7D21E7C8"
-			invisible: true
-			tasks: [{
-				id: "768338771C6214EE"
-				item: "create:cogwheel"
-				type: "item"
-			}]
-			x: -7.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["724212DE7D21E7C8"]
 			description: ["Cogwheels of different sizes affect rotational speed when connected."]
 			id: "139874E68B8EA533"
+			invisible: true
 			tasks: [
 				{
 					id: "16AC4F4329430AE8"
@@ -94,41 +118,50 @@
 				"{@pagebreak}"
 				""
 				"&lPONDER AND EMI:&r"
-				"Hold &2&nW&r while holding certain items to open a screen called &aPonder&r, which teaches you how that item works. "
+				"Hold &2&nW&r while holding certain items to open a screen called &aPonder&r, which teaches you how that item works."
 				"Use &6EMI&r to view recipes and crafting recipes."
+				"EMI is the thing on the left of your inventory that shows you the recipes (similar to JEI)"
+				"It is highly recommended to use both of these features to figure out how things work."
 				""
-				"it is highly reccomended to use both of these features to figure out how things work."
+				"{@pagebreak}"
+				""
+				"                     PONDER"
+				"{image:ftbquests:textures/picture/ponder_showcase.png width:150 height:150 align:center}"
+				""
+				"{@pagebreak}"
+				""
+				"                       EMI"
+				"{image:ftbquests:textures/picture/emi_showcase.png width:150 height:150 align:center}"
 				""
 				"{@pagebreak}"
 				""
 				"&lResearch System:&r"
-				"In the RESEARCH section of the quest book are Researches. You &nsubmit&r items to the quest, which in turn unlocks various items and recipes for you. Researches are mandatory for progression."
-				"If you haven't unlocked something it shows a little lock icon and tells you the research required."
+				"In the RESEARCH section of the quest book are Researches. You &nsubmit&r items to the quest, which unlocks various items and recipes for you. Researches are mandatory for progression."
+				"If you haven't unlocked something, it shows a little lock icon and tells you which research is required."
 				""
 				"{@pagebreak}"
 				""
 				"&lVANILLA CHANGES:&r"
 				"This modpack changes some core vanilla systems."
 				""
-				"Enchanting tables are removed."
-				"Vanilla potion brewing is removed."
-				"Villagers and villages do not generate."
-				"Most surface structures have been removed."
-				""
+				"- Enchanting tables are removed."
+				"- Vanilla potion brewing is removed."
+				"- Villagers and villages do not generate."
+				"- Most surface structures have been removed."
 				""
 				"{@pagebreak}"
+				""
 				"&lMULTIPLAYER:&r"
 				"This modpack is meant to be played in singleplayer. Things may break if you play it on multiplayer."
 			]
 			icon: "minecraft:book"
 			id: "7B8A25512C9DF291"
-			invisible: true
 			size: 2.5d
 			tasks: [{
 				dimension: "minecraft:overworld"
 				icon: "minecraft:book"
 				id: "1CDD8F24CC4480A3"
-				title: "Ponder"
+				title: " "
 				type: "dimension"
 			}]
 			title: "Welcome"
@@ -150,6 +183,7 @@
 				"This works on &nFurnaces&r, &nSmokers&r and &nBlast Furnaces&r"
 			]
 			id: "70E1FF3D8CAC744C"
+			invisible: true
 			tasks: [{
 				id: "54E8BE8C756EECBD"
 				item: "minecraft:furnace"
@@ -158,6 +192,45 @@
 			x: -2.5d
 			y: -2.5d
 		}
+		{
+			dependencies: ["7B8A25512C9DF291"]
+			id: "55B604A2A349A9D9"
+			rewards: [
+				{
+					auto: "enabled"
+					icon: "create:andesite_alloy"
+					id: "2465800118D4B279"
+					title: "Chapter 1 unlocked!"
+					type: "custom"
+				}
+				{
+					id: "257538D417F92D73"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0219A15544648792"
+				title: "Start"
+				type: "checkmark"
+			}]
+			title: "Start!"
+			x: 3.0d
+			y: -4.5d
+		}
+		{
+			description: ["Build a standard cobblestone generator, Place a magma block directly beneath the spot where cobblestone spawns, This will turn the cobblestone into andesite."]
+			id: "7633AA8AC590F6E1"
+			invisible: true
+			tasks: [{
+				id: "4BA2C722FB6DFE9C"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			title: "Andesite Generator"
+			x: -7.5d
+			y: -4.5d
+		}
 	]
-	title: "Chapter 1 Info"
+	title: "Chapter 1"
 }

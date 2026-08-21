@@ -1,0 +1,17 @@
+{
+    "formatVersion": "1.0",
+    "cobbleGen": [],
+    "stoneGen": [],
+    "basaltGen": [],
+    "customGen": {
+        "cobbleGen": {
+            "minecraft:magma_block": [
+                {
+                    "id": "minecraft:andesite",
+                    "weight": 100.0
+                }
+            ]
+        },
+        "basaltGen": {}
+    }
+}

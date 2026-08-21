@@ -1,0 +1,13 @@
+name = "SearchableFTBQuests"
+filename = "searchable_ftbquests-1.0.0+1.20.1-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "90d076b971ac0d8132523c5f7fc4aecb1017436c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8561718
+project-id = 1636279

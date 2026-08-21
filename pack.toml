@@ -1,12 +1,12 @@
 name = "Incremental Industry"
 author = "monsh0"
-version = "0.0.2"
+version = "0.0.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "a22b2a1ca1d18b537f96c8eefdb26be4c9f8a2adb8374282aaa0b998847f6f6d"
+hash = "faf24abce05ea634a857fd58d8d9c596a0c4d69b1ce5e7c22748554c72ee1d7f"
 
 [versions]
 forge = "47.4.22"

@@ -1,0 +1,42 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "backpacks"
+	group: "1ABB0AD0F1045D1C"
+	id: "00318E0447C90828"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"Backpacks are optional but helpful items for expanding your inventory."
+			""
+			"The first tier of backpack is available without any research."
+			"Open the backpack by right clicking OR by pressing B."
+			"You can have 2 backpacks in your inventory, after that you will get the &7Slowness&r effect."
+		]
+		icon: {
+			Count: 1
+			id: "sophisticatedbackpacks:backpack"
+			tag: {
+				inventorySlots: 18
+				upgradeSlots: 1
+			}
+		}
+		id: "7FC2107EA8DF19E6"
+		rewards: [{
+			id: "1D9730E7B86578C1"
+			item: "sophisticatedbackpacks:upgrade_base"
+			type: "item"
+		}]
+		shape: "diamond"
+		size: 2.0d
+		tasks: [{
+			id: "4E4EB783AA15D580"
+			title: "Backpacks"
+			type: "checkmark"
+		}]
+		x: -4.5d
+		y: -1.5d
+	}]
+	title: "Backpacks"
+}

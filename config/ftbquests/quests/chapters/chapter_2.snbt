@@ -226,7 +226,7 @@
 				item: { Count: 10, id: "kubejs:red_research_flask" }
 				type: "item"
 			}]
-			title: "Yellow Research Flask"
+			title: "&l&6Yellow Research Flask"
 			x: 8.0d
 			y: -2.0d
 		}
@@ -277,5 +277,5 @@
 			y: 0.0d
 		}
 	]
-	title: "Chapter 2"
+	title: "&l&6C2: Industrial Revolution"
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "create_ironworks:brass_pickaxe",
+    "create_ironworks:copper_pickaxe",
+    "create_ironworks:steel_pickaxe",
+    "create_ironworks:bronze_pickaxe"
+  ]
+}

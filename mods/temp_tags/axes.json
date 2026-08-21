@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "create_ironworks:brass_axe",
+    "create_ironworks:copper_axe",
+    "create_ironworks:steel_axe",
+    "create_ironworks:bronze_axe"
+  ]
+}
