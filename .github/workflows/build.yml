@@ -51,5 +51,7 @@ jobs:
       with:
         tag_name: ${{ github.event.inputs.tag }}
         files: |
+          *.mrpack
           *.zip
-        generate_release_notes: true
+          pack.toml
+        body_path: CHANGELOG.MD
