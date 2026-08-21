@@ -27,9 +27,7 @@ jobs:
 
     - name: Refresh
       run: packwiz refresh
-
-    - name: Export to Modrinth
-      run: packwiz modrinth export
+      
 
     - name: Export to CurseForge
       run: packwiz curseforge export
