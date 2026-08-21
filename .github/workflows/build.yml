@@ -27,10 +27,9 @@ jobs:
 
     - name: Refresh
       run: packwiz refresh
-      
 
     - name: Export to CurseForge
-      run: packwiz curseforge export
+      run: packwiz curseforge export --no-modrinth
       env:
         CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
 
@@ -39,14 +38,12 @@ jobs:
       with:
         name: modpack-exports
         path: |
-          *.mrpack
           *.zip
 
     - name: Create Release
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          *.mrpack
           *.zip
           pack.toml
         generate_release_notes: true
